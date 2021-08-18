@@ -3,33 +3,33 @@
         <ul>
             <li><a href="#">Notice</a></li>
             <li>
-                <a href="#">Menu Title</a>
+                <a href="#">Main Menu</a>
                 <ul>
-                    <li><a href="#">Sub Title</a></li>
-                    <li><a href="#">Sub Title</a></li>
-                    <li><a href="#">Sub Title</a></li>
+                    <li><a href="#">Sub Menu</a></li>
+                    <li><a href="#">Sub Menu</a></li>
+                    <li><a href="#">Sub Menu</a></li>
                 </ul>
             </li>
             <li>
-                <a href="#">Menu Title</a>
+                <a href="#">Main Menu</a>
                 <ul>
-                    <li><a href="#">Sub Title</a></li>
-                    <li><a href="#">Sub Title</a></li>
-                    <li><a href="#">Sub Title</a></li>
+                    <li><a href="#">Sub Menu</a></li>
+                    <li><a href="#">Sub Menu</a></li>
+                    <li><a href="#">Sub Menu</a></li>
                 </ul>
             </li>
-            <li><a href="#">Menu Title</a>
+            <li><a href="#">Main Menu</a>
                 <ul>
-                    <li><a href="#">Sub Title</a></li>
-                    <li><a href="#">Sub Title</a></li>
-                    <li><a href="#">Sub Title</a></li>
+                    <li><a href="#">Sub Menu</a></li>
+                    <li><a href="#">Sub Menu</a></li>
+                    <li><a href="#">Sub Menu</a></li>
                 </ul>
             </li>
-            <li><a href="#">Menu Title</a>
+            <li><a href="#">Main Menu</a>
                 <ul>
-                    <li><a href="#">Sub Title</a></li>
-                    <li><a href="#">Sub Title</a></li>
-                    <li><a href="#">Sub Title</a></li>
+                    <li><a href="#">Sub Menu</a></li>
+                    <li><a href="#">Sub Menu</a></li>
+                    <li><a href="#">Sub Menu</a></li>
                 </ul>
             </li>
         </ul>
