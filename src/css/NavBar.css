@@ -1,0 +1,77 @@
+nav {
+    display: flex;
+    position: relative;
+    width: 100%;
+    text-align: center;
+    background: linear-gradient(90deg, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    justify-content: center;
+}
+
+nav ul {
+    display: inline-block;
+	position: relative;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+nav > ul > li {
+	position: relative;
+	float: left;
+    border-left: 1px solid rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
+}
+
+nav > ul li:last-child {
+    border-right: 1px solid rgb(255, 255, 255);
+}
+
+nav ul li:hover {
+	background-color: rgba(0, 0, 0, 0.1);
+}
+
+nav ul li:hover > a {
+	color: white;
+}
+
+nav ul li a {
+	display: inline-block;
+    width: 150px;
+    padding: 15px 0;
+	color: rgb(255, 255, 255);
+	font-size: 15pt;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	text-align: center;
+	text-decoration: none;
+	white-space: nowrap;
+}
+nav > ul li > ul {
+	position: absolute;
+	top: 100%;
+	left: -1px;
+    background-color: teal;
+    z-index: 1;
+}
+nav ul ul li {
+	float: none;
+	margin: 0;
+    border: 1px solid white;
+}
+
+nav > ul ul li:first-child {
+    border-top: 2px solid white;
+}
+
+nav > ul ul li:last-child {
+    border-right: none;
+}
+
+.nav02 ul ul {
+	visibility: hidden;
+	opacity: 0;
+	transition: .2s ease-in-out;
+}
+.nav02 ul li:hover > ul {
+	visibility: visible;
+	opacity: 1;
+}
