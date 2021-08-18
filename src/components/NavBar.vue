@@ -1,35 +1,35 @@
 <template>
     <nav class="nav02">
         <ul>
-            <li><a href="#">Notice</a></li>
+            <li><router-link to="#">Notice</router-link></li>
             <li>
-                <a href="#">Main Menu</a>
+                <router-link to="/One">Main Menu1</router-link>
                 <ul>
-                    <li><a href="#">Sub Menu</a></li>
-                    <li><a href="#">Sub Menu</a></li>
-                    <li><a href="#">Sub Menu</a></li>
+                    <li><router-link to="#">Sub Menu</router-link></li>
+                    <li><router-link to="#">Sub Menu</router-link></li>
+                    <li><router-link to="#">Sub Menu</router-link></li>
                 </ul>
             </li>
             <li>
-                <a href="#">Main Menu</a>
+                <router-link to="/Two">Main Menu2</router-link>
                 <ul>
-                    <li><a href="#">Sub Menu</a></li>
-                    <li><a href="#">Sub Menu</a></li>
-                    <li><a href="#">Sub Menu</a></li>
+                    <li><router-link to="#">Sub Menu</router-link></li>
+                    <li><router-link to="#">Sub Menu</router-link></li>
+                    <li><router-link to="#">Sub Menu</router-link></li>
                 </ul>
             </li>
-            <li><a href="#">Main Menu</a>
+            <li><router-link to="/Three">Main Menu3</router-link>
                 <ul>
-                    <li><a href="#">Sub Menu</a></li>
-                    <li><a href="#">Sub Menu</a></li>
-                    <li><a href="#">Sub Menu</a></li>
+                    <li><router-link to="#">Sub Menu</router-link></li>
+                    <li><router-link to="#">Sub Menu</router-link></li>
+                    <li><router-link to="#">Sub Menu</router-link></li>
                 </ul>
             </li>
-            <li><a href="#">Main Menu</a>
+            <li><router-link to="#">Main Menu4</router-link>
                 <ul>
-                    <li><a href="#">Sub Menu</a></li>
-                    <li><a href="#">Sub Menu</a></li>
-                    <li><a href="#">Sub Menu</a></li>
+                    <li><router-link to="#">Sub Menu</router-link></li>
+                    <li><router-link to="#">Sub Menu</router-link></li>
+                    <li><router-link to="#">Sub Menu</router-link></li>
                 </ul>
             </li>
         </ul>

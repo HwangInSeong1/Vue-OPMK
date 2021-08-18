@@ -22,8 +22,8 @@ nav > ul > li {
     text-shadow: 1px 1px 1px rgba(0,0,0,0.2);
 }
 
-nav > ul li:last-child {
-    border-right: 1px solid rgb(255, 255, 255);
+nav > ul li:first-child {
+    border-left: 0px;
 }
 
 nav ul li:hover {
@@ -34,7 +34,7 @@ nav ul li:hover > a {
 	color: white;
 }
 
-nav ul li a {
+nav ul li a { /* router-link ---> a 로 치환 */
 	display: inline-block;
     width: 150px;
     padding: 15px 0;
@@ -62,8 +62,8 @@ nav > ul ul li:first-child {
     border-top: 2px solid white;
 }
 
-nav > ul ul li:last-child {
-    border-right: none;
+nav > ul ul li:first-child {
+    border-left: 1px solid white;
 }
 
 .nav02 ul ul {
