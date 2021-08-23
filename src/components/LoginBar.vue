@@ -2,6 +2,7 @@
     <div class="bodydiv">
         <div class="loginBar">
             <router-link to="/"><div class="logo"><img src="../assets/OpenMarket.png" class="logoimg"></div></router-link>
+            <span>고객센터</span>
             <span>SignUp</span>
             <span @click="modalcheck = true">Login</span>
         </div>
