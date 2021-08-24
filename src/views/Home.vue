@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>여기가 홈화면</h1>
+        <img src="../assets/Homeimg.jpg" width="100%" object-fit: cover>
     </div>    
 </template>
 
