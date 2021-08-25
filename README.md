@@ -1,11 +1,20 @@
 # opmk
+이것은 졸업작품용 프로젝트 "오픈마켓" 입니다.
 
 ## Project setup
 ```
-yarn install
+
+Node.js 설치 https://nodejs.org/en/
+->
+npm install -g @vue/cli
+->
+npm install vue-router
+->
+npm install vue bootstrap bootstrap-vue 또는 yarn add vue bootstrap bootstrap-vue
+
 ```
 
-### Compiles and hot-reloads for development
+### 프로젝트 실행방법
 ```
 yarn serve
 ```

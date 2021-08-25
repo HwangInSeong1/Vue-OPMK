@@ -1,12 +1,12 @@
 <template>
-  <div id="app">
-    <LoginBar />
-    <NavBar />
     <div>
-      <router-view></router-view>
+      <LoginBar />
+      <NavBar />
+      <div>
+        <router-view></router-view>
+      </div>
+      <Footer />
     </div>
-    <Footer />
-  </div>
 </template>
 
 <script>
