@@ -31,3 +31,7 @@ yarn lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+### 결과화면 상단1
+![상단](https://user-images.githubusercontent.com/66094508/130724906-e0dff117-7d09-4216-a239-853ef3bcf9ea.PNG)
