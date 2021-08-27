@@ -35,9 +35,16 @@
     padding-bottom: 22px;
     padding-right: 25px;
     word-wrap:break-word;
-    overflow: hidden;
+    overflow: auto;
     font-weight: bold;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
+
+.ftinfo::-webkit-scrollbar {
+    display: none;
+  }
+
 .ftinfo > h5{
     font-weight: bold;
     /* color: rgb(75, 75, 75); */
@@ -45,8 +52,8 @@
 }
 
 .ftinfo_ct {
-    padding-top: 8px;
-    padding-bottom: 5px;
+    padding-top: 10px;
+    padding-bottom: 2px;
     font-size: 9pt;
     font-weight: bold;
 }
@@ -56,6 +63,7 @@
     color: rgb(190, 190, 190);
     font-weight: normal;
     padding-top: 10px;
+    margin-bottom: -10px;
 }
 
 .ftend {
