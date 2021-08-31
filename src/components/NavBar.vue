@@ -3,7 +3,7 @@
         <ul>
             <li><router-link to="#">Notice</router-link></li>
             <li>
-                <router-link to="/One">Main Menu1</router-link>
+                <router-link to="/Market001">Main Menu1</router-link>
                 <ul>
                     <li><router-link to="#">Sub Menu</router-link></li>
                     <li><router-link to="#">Sub Menu</router-link></li>
