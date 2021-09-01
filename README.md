@@ -11,6 +11,9 @@ npm install -g @vue/cli
 npm install vue-router
 ->
 npm install vue bootstrap bootstrap-vue 또는 yarn add vue bootstrap bootstrap-vue
+->
+npm i swiper@5.3.7 
+npm i vue-awesome-swiper
 
 ```
 
