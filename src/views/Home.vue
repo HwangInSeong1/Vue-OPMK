@@ -17,11 +17,11 @@
     <div class="mainpage">
             <div class="maincontent">
                 <span>Example 01</span>
-                <span>Vivy : Fluorite Eye's Song</span>
-                <span>Vivy : Fluorite Eye's Song</span>
-                <span>Vivy : Fluorite Eye's Song</span>
-                <span>Vivy : Fluorite Eye's Song</span>
-                <span>Vivy : Fluorite Eye's Song</span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
             </div>
         </div>
 </div>

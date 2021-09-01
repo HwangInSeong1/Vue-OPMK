@@ -174,10 +174,9 @@
     }
 
     .loginBar > span:nth-child(5) { /* 반응형 검색창 */
-        border:none;
         position: relative;
         top:0;left:0;
-        width: 450px;
+        width: 440px;
         clear:both;
         margin-top: 15px;
         margin-bottom: 5px;
