@@ -1,5 +1,6 @@
 <template>
- <swiper class="swiper" ref="mySwiper" 
+<div>
+    <swiper class="swiper" ref="mySwiper" 
 		:options="swiperOptions" 
 		@slideChange="slideChangeTransitionStart"
 	>
@@ -13,6 +14,17 @@
 		<div class="swiper-button-prev swiper-btn-prev" slot="button-prev" style="color:white;text-shadow:2px 2px 2px gray"></div>
 		<div class="swiper-button-next swiper-btn-next" slot="button-next" style="color:white;text-shadow:2px 2px 2px gray"></div>
 	</swiper>
+    <div class="mainpage">
+            <div class="maincontent">
+                <span>Example 01</span>
+                <span>Vivy : Fluorite Eye's Song</span>
+                <span>Vivy : Fluorite Eye's Song</span>
+                <span>Vivy : Fluorite Eye's Song</span>
+                <span>Vivy : Fluorite Eye's Song</span>
+                <span>Vivy : Fluorite Eye's Song</span>
+            </div>
+        </div>
+</div>
 </template>
 
 <script>
@@ -35,7 +47,7 @@ export default {
                 ads : [
                     {num:1, adsimg : require('../assets/adsimg/adsimg001.png')},
                     {num:2, adsimg : require('../assets/adsimg/adsimg002.png')},
-                    {num:3, adsimg : require('../assets/listimg/image06.jpg')},
+                    {num:3, adsimg : require('../assets/listimg/image07.jpg')},
                 ],
 				swiperOptions: {
 					loop: true,

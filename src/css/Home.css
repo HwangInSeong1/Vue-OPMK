@@ -1,3 +1,4 @@
+
 .swslide {
     width:100%;
     height: 150px;
@@ -13,4 +14,24 @@ img {
 .swiper-pagination-bullet-active {
     background: white;
     opacity: 0.8;
+}
+
+.mainpage {
+    width:100%;
+}
+
+.maincontent {
+    max-width:1000px;
+    width:1000px;
+    margin:0 auto;
+    padding: 5px;
+}
+
+.maincontent > span {
+    display:inline-block;
+    vertical-align:top;
+    width:237px;
+    margin: 5px;
+    border:1px solid black;
+    text-align: center;
 }

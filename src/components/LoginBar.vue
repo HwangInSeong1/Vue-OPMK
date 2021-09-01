@@ -1,10 +1,12 @@
 <template>
     <div class="bodydiv">
+        
         <div class="loginBar">
             <router-link to="/"><div class="logo"><img src="../assets/OpenMarket.png" class="logoimg"></div></router-link>
             <span>고객센터</span>
             <span>SignUp</span>
             <span @click="modalcheck = true">Login</span>
+            <span><Search /></span> <!-- 검색창 컴포넌트 -->
         </div>
         <transition name="slide-fade">
             <div class="modalout" v-if="modalcheck">
@@ -31,11 +33,15 @@
 </template>
 
 <script>
+import Search from './Search.vue'; // 검색vue import
+
 export default {
     name : 'LoginBar',
+    components: {Search, // 검색vue import
+    },
     data(){
         return {
-            modalcheck : false,
+            modalcheck : false,      
         }
     },
 };

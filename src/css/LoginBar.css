@@ -34,9 +34,25 @@
     border-radius: 10px;
 }
 
+.loginBar > span:nth-child(5) { /* 검색창 */
+    border:none;
+    position: absolute;
+    top:0;left:0;
+    width: 450px;
+    margin-left: 300px;
+    clear:both;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
 .loginBar > span:hover {
     color: white;
     background: linear-gradient(125deg,#00bf72, #d6ff7d);
+}
+
+.loginBar > span:nth-child(5):hover {
+    color: none;
+    background: none;
 }
 
 .modalout{ 
@@ -145,4 +161,25 @@
 }
 .slide-fade-enter, .slide-fade-leave-to {
     opacity: 0;
+}
+
+@media(max-width:755px){
+    .logo {
+        width: 200px;
+    }
+    .logoimg {
+        width: 250px;
+        height: 70px;
+        object-fit: cover;
+    }
+
+    .loginBar > span:nth-child(5) { /* 반응형 검색창 */
+        border:none;
+        position: relative;
+        top:0;left:0;
+        width: 450px;
+        clear:both;
+        margin-top: 15px;
+        margin-bottom: 5px;
+    }
 }
