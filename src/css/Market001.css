@@ -1,7 +1,18 @@
 .markethead {
-    padding-top: 40px;
+    position: relative;
+    height:60px;
     text-align: center;
-    text-shadow: 2px 2px 2px gray;
+    text-shadow: 3px 3px 3px rgb(187, 187, 187);
+    font-size: 26pt;
+}
+
+.markethead > .sidemenu {
+    width:74px;
+    height:60px;
+    position: absolute;
+    top:0;
+    left:0;
+    text-shadow: none;
 }
 .marketlist {
     max-width:1500px;
@@ -63,7 +74,7 @@
     display:block;
     position:absolute;
     top:0;left:0;
-    width:100%;
+    width:300px;
     height:100%;
     background:rgba(0,0,0,.5);
     z-index:1;
@@ -78,6 +89,41 @@
 }
 .marketlist > ul > li > a:hover .screen::after {
     opacity:1;
+}
+
+.menu_modalout{ 
+    position:absolute;
+    width:280px; 
+    height:700px; 
+    background: rgb(255, 255, 255); 
+    top:0px; left:0;
+    z-index: 3;
+    border:1px solid rgb(161, 161, 161);
+}
+
+.menu_modalin{
+    width:280px; 
+    height:500px; 
+    border-radius:10px;
+    position:relative; 
+    text-align:center;
+    box-sizing:border-box; 
+    cursor:pointer;
+}
+
+.side_xxx {
+    border:2px solid black;
+    border-radius: 50%;
+    position: absolute;
+    right: 8px; top: 8px;
+    width:35px;
+    height:35px;
+    line-height:20px;
+    text-shadow: none;
+}
+
+ion-icon {
+    font-size: 50px;
 }
 
 @media(max-width:755px){

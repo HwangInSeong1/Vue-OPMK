@@ -5,7 +5,7 @@
 		@slideChange="slideChangeTransitionStart"
 	>
 
-		<swiper-slide class="swslide" :key="ad.num" v-for="ad in ads"> <img :src="ad.adsimg" > </swiper-slide>
+		<swiper-slide class="swslide" :key="ad.num" v-for="ad in ads"> <img :src="ad.adsimg"> </swiper-slide>
 		
 		<!-- pagination -->
 		<div class="swiper-pagination" slot="pagination"></div>
@@ -14,15 +14,48 @@
 		<div class="swiper-button-prev swiper-btn-prev" slot="button-prev" style="color:white;text-shadow:2px 2px 2px gray"></div>
 		<div class="swiper-button-next swiper-btn-next" slot="button-next" style="color:white;text-shadow:2px 2px 2px gray"></div>
 	</swiper>
+	<div class="maintitle">오늘의 발견! TOP 9</div>
     <div class="mainpage">
-            <div class="maincontent">
-                <span>Example 01</span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <div class="mainflex">
+				<div class="screen_m">
+					<div class="scrtext_m">구매하러가기</div>
+				</div>
+			</div>
+			<div class="mainflex">
+				<div class="screen_m">
+					<div class="scrtext_m">구매하러가기</div>
+				</div>
+			</div>
+			<div class="mainflex">
+				<div class="screen_m">
+					<div class="scrtext_m">구매하러가기</div>
+				</div>
+			</div>
+			<div class="mainflex">
+				<div class="screen_m">
+					<div class="scrtext_m">구매하러가기</div>
+				</div>
+			</div>
+			<div class="mainflex">
+				<div class="screen_m">
+					<div class="scrtext_m">구매하러가기</div>
+				</div>
+			</div>
+			<div class="mainflex">
+				<div class="screen_m">
+					<div class="scrtext_m">구매하러가기</div>
+				</div>
+			</div>
+			<div class="mainflex">
+				<div class="screen_m">
+					<div class="scrtext_m">구매하러가기</div>
+				</div>
+			</div>
+			<div class="mainflex">
+				<div class="screen_m">
+					<div class="scrtext_m">구매하러가기</div>
+				</div>
+			</div>
         </div>
 </div>
 </template>
@@ -47,7 +80,9 @@ export default {
                 ads : [
                     {num:1, adsimg : require('../assets/adsimg/adsimg001.png')},
                     {num:2, adsimg : require('../assets/adsimg/adsimg002.png')},
-                    {num:3, adsimg : require('../assets/listimg/image07.jpg')},
+                    {num:3, adsimg : require('../assets/listimg/image05.jpg')},
+					{num:4, adsimg : require('../assets/adsimg/adsimg003.png')},
+					{num:4, adsimg : require('../assets/adsimg/adsimg004.jpg')},
                 ],
 				swiperOptions: {
 					loop: true,

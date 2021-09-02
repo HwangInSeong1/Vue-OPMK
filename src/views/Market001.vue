@@ -1,6 +1,14 @@
 <template>
     <div>
-        <h1 class="markethead">Market 001</h1>
+        <div class="markethead">OpenMarket
+            <div class="sidemenu" @click="sidecheck=true"><ion-icon name="menu-outline"></ion-icon></div>
+            <div class="menu_modalout" v-if="sidecheck">
+                <div class="menu_modalin">
+                    <div class="side_xxx" @click="sidecheck=false">x</div>
+                    <br><br>
+                </div>
+            </div>
+        </div>
         <div class="marketlist">
             <ul>
                 <li :key="item.id" v-for="item in items">
@@ -36,6 +44,7 @@ export default {
                     {id: 8 , stitle : 'Code .008', maker: 'INSEONG', btitle: 'Item 008', img: require('../assets/listimg/image07.jpg')},
                     {id: 8 , stitle : 'Code .008', maker: 'INSEONG', btitle: 'Item 008', img: require('../assets/listimg/image07.jpg')},
                     ],
+                sidecheck: false,
             }
         }
 }

@@ -34,11 +34,12 @@ export default {
   padding:5px;
   font-weight: bold;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: rgb(39, 221, 94);
+  color: rgb(37, 128, 64);
+  border-radius: 10px;
 }
 
 .topBar:hover {
-  background: rgba(77, 77, 77, 0.5);
+  background: rgba(131, 131, 131, 0.5);
   color: white;
 }
 </style>
