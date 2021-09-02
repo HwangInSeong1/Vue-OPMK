@@ -10,7 +10,7 @@
         </div>
         <transition name="slide-fade">
             <div class="modalout" v-if="modalcheck">
-                <div class="modalin">
+                <div class="modalin" v-if="loginmodal">
                     <form action="#" method="post" class="loginForm">
                         <h2>Login</h2>
                         <div class="idForm">
@@ -20,11 +20,14 @@
                             <input type="password" class="pw" placeholder="PW">
                         </div>
                         <button type="button" class="loginbtn">LOG IN</button>
-                        <div class="bottomText"> Don't you have ID? <a href="#">sign up</a>
+                        <div class="bottomText"> Don't you have ID? <a href="#" @click="signmodal=true, loginmodal=false">sign up</a>
                         </div>
                     </form>
                 </div>
-                <div class="xbox" @click="modalcheck = false">
+                <div class="modalin" v-if="signmodal">
+                    <div @click="signmodal = false, loginmodal = true">Hi</div>
+                </div>
+                <div class="xbox" @click="modalcheck = false, signmodal = false, loginmodal = true">
                     x
                 </div>
             </div>
@@ -36,17 +39,19 @@
 import Search from './Search.vue'; // 검색vue import
 
 export default {
-    name : 'LoginBar',
+    name : 'LoginSignBar',
     components: {Search, // 검색vue import
     },
     data(){
         return {
-            modalcheck : false,      
+            modalcheck : false,  
+            signmodal : false,
+            loginmodal : true,    
         }
     },
 };
 </script>
 
 <style>
-@import url(../css/LoginBar.css);
+@import url(../css/Login_SignBar.css);
 </style>
