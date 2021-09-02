@@ -1,7 +1,7 @@
 <template>
     <div>
       <a href="#lc_top"><div class="topBar"> Top </div></a>
-      <LoginBar id="lc_top" />
+      <LoginSignBar id="lc_top" />
       <NavBar />
       <div>
         <router-view></router-view>
@@ -12,14 +12,14 @@
 
 <script>
 import NavBar from './components/NavBar.vue'
-import LoginBar from './components/LoginBar.vue'
+import LoginSignBar from './components/Login_SignBar.vue'
 import Footer from './components/Footer.vue'
 
 export default {
   name: 'App',
   components: {
     NavBar,
-    LoginBar,
+    LoginSignBar,
     Footer,
   }
 }
