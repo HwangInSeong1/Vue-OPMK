@@ -25,6 +25,8 @@
 
 .ftimg {
     opacity: 1.0;
+    width:280px;
+    height:180px;
     line-height: 195px;
 }
 

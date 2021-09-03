@@ -61,7 +61,7 @@
     height:100%; 
     background: rgba(0,0,0,0.8); 
     top:0; left:0;
-    z-index: 3;
+    z-index: 10;
 }
 
 .modalin{
@@ -81,7 +81,7 @@
 }
 
 .xbox {
-    margin-top: -210px;
+    margin-top: -211px;
     margin-right: 15px;
     color:white;
     font-size: 40px;
@@ -150,6 +150,7 @@
 }
 
 .bottomText {
+    margin-top:-10px;
     text-align: center;
 }
 
@@ -163,6 +164,236 @@
     opacity: 0;
 }
 
+.modalin_sign{
+    width:400px; 
+    height:700px;
+    background:#fff; 
+    border-radius:10px;
+    position:relative; 
+    top: 30%; left: 48%;
+    margin-top: -200px;
+    margin-left: -158px;
+    text-align:center;
+    box-sizing:border-box; 
+    padding:20px 0;
+    line-height:23px; 
+    cursor:pointer;
+}
+
+.xbox_sign {
+    margin-top: -511px;
+    margin-right: 15px;
+    color:white;
+    font-size: 40px;
+    float:right;
+    cursor:pointer;
+}
+
+.signForm h2{
+    text-align: center;
+    margin: 10px;
+    font-weight: bold;
+}
+
+.input_Sign{
+    width:80%;
+    padding-top: 30px;
+    margin:20px auto;
+    text-align: left;
+}
+.span01 {
+    border-bottom: 1px solid gray;
+    border-right: 1px solid gray;
+    border-radius: 3px;
+    padding:3px;
+    display: inline-block;
+    width:70px;
+    height:35px;
+    margin-right:5px;
+}
+
+.span02 {
+    border-bottom: 1px solid gray;
+    display: inline-block;
+    width: 238px;
+    height:39px;
+    padding:3px;
+    line-height: 30px;
+}
+
+.ipsi {
+    border:0px;
+}
+
+.submit_Design {
+    position:relative;
+    left:40%;
+    transform: translateX(-50%);
+    margin-bottom: 10px;
+    width:80%;
+    height:40px;
+    background: linear-gradient(125deg,#caff57, #00bf72, #caff57);
+    background-position: right;
+    background-size: 200%;
+    color:white;
+    font-weight: bold;
+    border:none;
+    cursor:pointer;
+    transition: 0.4s;
+    display:inline;
+    
+}
+.submit_Design:hover {
+    background-position: left;
+}
+.back_Login {
+    position:relative;
+    left:40%;
+    transform: translateX(-50%);
+    margin-bottom: 10px;
+    width:80%;
+    height:40px;
+    background: linear-gradient(125deg,#caff57, #00bf72, #caff57);
+    background-position: right;
+    background-size: 200%;
+    color:white;
+    font-weight: bold;
+    border:none;
+    cursor:pointer;
+    transition: 0.4s;
+    display:inline;
+}
+.back_Login:hover {
+    background-position: left;
+}
+
+input[type='checkbox'] {
+    -webkit-appearance:none;
+    width:13px;
+    height:13px;
+    margin-right:3px;
+    border:1px solid darkgray;
+    outline:none;
+    background:#e6e6e6;
+}
+input[type='checkbox']:before {
+    content:'';
+    display:block;
+    width:90%;
+    height:90%;
+}
+  input[type='checkbox']:checked:before {
+  	background:#299629;
+}
+
+input[type=radio] {
+    -webkit-appearance:none;
+    width:13px;
+    height:13px;
+    margin-right:3px;
+    border:1px solid darkgray;
+    border-radius:50%;
+    outline:none;
+    background:#e6e6e6;
+}
+input[type='radio']:before {
+    content:'';
+    display:block;
+    width:7px;
+    height:7px;
+    margin: 2px auto;  
+    border-radius:50%;  
+}
+  input[type='radio']:checked:before {
+  	background:#299629;
+}
+
+.input_Sign > span > div > a {
+    text-decoration: none;
+    color:rgb(59, 189, 115);
+    position: absolute;
+}
+
+.input_Sign > span > div > a:hover {
+    color:royalblue;
+    font-weight: bold;
+}
+.emptyspace {
+    display: inline-block;
+    width: 145px;
+}
+.othersign {
+    padding-top:10px;
+    padding-bottom:10px;
+    width:320px;
+    margin:0 auto;
+}
+.othersign > ul {
+    margin-bottom:-10px;
+    -webkit-padding-start:0px;
+    text-align: center;
+}
+.othersign > ul li {
+    display: inline-block;
+    width: 50px;
+    height:50px;
+    list-style-type: none;
+}
+.google_ic{
+    font-size: 35px;
+    color:rgb(0, 0, 0);
+    background:rgb(255, 255, 255);
+    padding:3px;
+}
+.google_ic:hover{
+    background:rgb(255, 255, 255);
+    color:rgb(49, 143, 90);
+}
+.discord_ic{
+    font-size: 35px;
+    color:rgb(0, 0, 0);
+    padding:3px;
+}
+
+.discord_ic:hover{
+    color:#5865f2;
+}
+.github_ic{
+    border-radius: 50px;
+    font-size: 35px;
+    color:rgb(0, 0, 0);
+    margin-bottom:3px;
+    background:rgb(255, 255, 255);
+}
+.github_ic:hover{
+    color:rgb(255, 255, 255);
+    background:rgb(0, 0, 0);
+}
+.vue_ic{
+    font-size: 35px;
+    color:rgb(255, 255, 255);
+    padding:3px;
+    color:rgb(0, 0, 0);
+}
+.vue_ic:hover{
+    color:rgb(0, 161, 81);
+}
+.facebook_ic{
+    font-size: 35px;
+    color:rgb(0, 0, 0);
+    padding:3px;
+}
+.facebook_ic:hover{
+    color:rgb(59, 89, 152);
+}
+.signlogo {
+    margin:10px auto;
+    width:250px;
+    height:70px;
+    background-image: url("../assets/OpenMarket01.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 @media(max-width:755px){
     .logo {
         width: 200px;

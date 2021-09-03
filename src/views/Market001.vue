@@ -2,12 +2,14 @@
     <div>
         <div class="markethead">OpenMarket
             <div class="sidemenu" @click="sidecheck=true"><ion-icon name="menu-outline"></ion-icon></div>
-            <div class="menu_modalout" v-if="sidecheck">
-                <div class="menu_modalin">
-                    <div class="side_xxx" @click="sidecheck=false">x</div>
-                    <br><br>
-                </div>
-            </div>
+                <transition name="slide-fade">
+                    <div class="menu_modalout" v-if="sidecheck">
+                        <div class="menu_modalin">
+                            <div class="side_xxx" @click="sidecheck=false">x</div>
+                            <br><br>
+                        </div>
+                    </div>
+                </transition>
         </div>
         <div class="marketlist">
             <ul>
