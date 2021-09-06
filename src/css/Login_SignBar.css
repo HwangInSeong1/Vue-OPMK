@@ -54,6 +54,14 @@
     color: none;
     background: none;
 }
+.loginlogo {
+    margin:10px auto;
+    width:200px;
+    height:60px;
+    background-image: url("../assets/OpenMarket01.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+}
 
 .modalout{ 
     position:fixed; 
@@ -66,12 +74,12 @@
 
 .modalin{
     width:300px; 
-    height:400px;
+    height:500px;
     background:#fff; 
     border-radius:10px;
     position:relative; 
     top: 50%; left: 50%;
-    margin-top: -200px;
+    margin-top: -300px;
     margin-left: -158px;
     text-align:center;
     box-sizing:border-box; 
@@ -151,6 +159,7 @@
 
 .bottomText {
     margin-top:-10px;
+    padding-bottom:10px;
     text-align: center;
 }
 

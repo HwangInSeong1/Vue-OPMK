@@ -22,6 +22,7 @@
                         <button type="button" class="loginbtn">LOG IN</button>
                         <div class="bottomText"> Don't you have ID? <a href="#" @click="signmodal=true, loginmodal=false">sign up</a>
                         </div>
+                        <div class="loginlogo"></div>
                     </form>
                 </div>
                 <div class="xbox" @click="modalcheck = false, signmodal = false, loginmodal = true">
@@ -40,9 +41,9 @@
                     <span class="span01">BIRTH</span> <span class="span02"> <input type="text" class="ipsi" placeholder="EX) 19960727" size=28 required></span><br>
                     <span>
                         <div style="margin-top:5px;">제 1약관 <a href="#">[자세히보기]</a> <span class="emptyspace"></span>
-                            <input type="checkbox" name="check" value="ck"> 동의합니다.</div>
+                            <input type="checkbox" name="check" value="ck" required> 동의합니다.</div>
                         <div>제 2약관 <a href="#">[자세히보기]</a> <span class="emptyspace"></span>
-                            <input type="checkbox" name="check1" value="ck2"> 동의합니다.</div>
+                            <input type="checkbox" name="check1" value="ck2" required> 동의합니다.</div>
                     </span>
                     </div>
                         <input type="submit" value="회원가입" class="submit_Design"><br>
@@ -50,19 +51,19 @@
                     </form>
                     <div class="othersign">
                     <ul>
-                            <li><a href="#" target="_blank">
+                            <li><a href="#">
                                     <ion-icon name="logo-google" class="google_ic"></ion-icon>
                                 </a></li>
-                            <li><a href="#" target="_blank">
+                            <li><a href="#">
                                     <ion-icon name="logo-discord" class="discord_ic"></ion-icon>
                                 </a></li>
-                            <li><a href="#" target="_blank">
+                            <li><a href="#">
                                     <ion-icon name="logo-github" class="github_ic"></ion-icon>
                                 </a></li>
-                            <li><a href="#" target="_blank">
+                            <li><a href="#">
                                     <ion-icon name="logo-vue" class="vue_ic"></ion-icon>
                                 </a></li>
-                            <li><a href="#" target="_blank">
+                            <li><a href="#">
                                     <ion-icon name="logo-facebook" class="facebook_ic"></ion-icon>
                                 </a></li>
                         </ul>

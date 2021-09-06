@@ -27,7 +27,8 @@
                     <div class="cr">Copyright © Coupang Corp. 2010-2021 All Rights Reserved.</div>
             </div>
             <div class="ftend">
-                <router-link to=#><span>이용약관</span><br></router-link>
+                <router-link to=""><span @click="visible01 = true">이용약관</span><br></router-link>
+                <TermsOfUse v-if="visible01" /> <div class="x01" v-if="visible01" @click="visible01=false">X</div>
                 <router-link to=#><span>공지사항</span><br></router-link>
                 <router-link to=#><span>개인정보처리방침</span><br></router-link>
                 <router-link to=#><span>저작권정책</span><br></router-link>
@@ -41,8 +42,17 @@
 </template>
 
 <script>
-export default {
+import TermsOfUse from "./FooterContent/TermsOfUse.vue";
 
+export default {
+    components: {
+        TermsOfUse,
+    },
+    data(){
+        return {
+            visible01: false,
+        }
+    },
 };
 </script>
 
