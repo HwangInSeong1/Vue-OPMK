@@ -24,7 +24,7 @@
                     <br>오픈마켓은 소비자 보호와 안전거래를 위해 신뢰관리센터(Master112@openmarket.com)를 운영하고 있으며, 
                     관련 분쟁이 발생할 경우 별도의 분쟁 처리절차에 의거 분쟁이 처리됩니다.
                     </div>
-                    <div class="cr">Copyright © Coupang Corp. 2010-2021 All Rights Reserved.</div>
+                    <div class="cr">Copyright © OpenMarket Corp. 2010-2021 All Rights Reserved.</div>
             </div>
             <div class="ftend">
                 <router-link to=""><span @click="visible01 = true">이용약관</span><br></router-link>
