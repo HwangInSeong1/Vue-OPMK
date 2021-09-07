@@ -3,7 +3,7 @@ import VueRouter from "vue-router";
 import Home from "./views/Home";
 import Market001 from "./views/Market001";
 import PageTwo from "./views/PageTwo";
-import PageThree from "./views/PageThree";
+import Notice from "./views/Notice";
 
 Vue.use(VueRouter);
 
@@ -13,7 +13,7 @@ const router = new VueRouter({
         {path:"/", component: Home},
         {path:"/Market001", component: Market001},
         {path:"/Two", component: PageTwo},
-        {path:"/Three", component: PageThree},
+        {path:"/Notice", component: Notice},
     ]
 })
 

@@ -29,7 +29,7 @@
             <div class="ftend">
                 <router-link to=""><span @click="visible01 = true">이용약관</span><br></router-link>
                 <TermsOfUse v-if="visible01" /> <div class="x01" v-if="visible01" @click="visible01=false">X</div>
-                <router-link to=#><span>공지사항</span><br></router-link>
+                <router-link to="/Notice"><span>공지사항</span><br></router-link>
                 <router-link to=#><span>개인정보처리방침</span><br></router-link>
                 <router-link to=#><span>저작권정책</span><br></router-link>
                 <router-link to=#><span>회사소개</span><br></router-link>

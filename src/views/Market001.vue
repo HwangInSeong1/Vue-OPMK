@@ -1,17 +1,52 @@
 <template>
     <div>
-        <div class="markethead">OpenMarket
+        <div class="markethead"> <div>패션의류/잡화<ion-icon name="shirt-outline" class="icct_img"></ion-icon></div>
             <div class="sidemenu" @click="sidecheck=true"><ion-icon name="menu-outline"></ion-icon></div>
                 <transition name="slide-fade">
                     <div class="menu_modalout" v-if="sidecheck">
                         <div class="menu_modalin">
+                            <div class="seboo_cate"> &nbsp;세부 카테고리</div>
                             <div class="side_xxx" @click="sidecheck=false">x</div>
-                            <br><br>
+                            <div class="seboo_cate_a">남성의류<ion-icon name="caret-forward" class="ic_po"></ion-icon>
+                                <div class="seboo_cate_b">
+                                    <router-link to="#"><div class="seboo_cate_c" @click="sidecheck=false">상의</div></router-link>
+                                    <router-link to="#"><div class="seboo_cate_c" @click="sidecheck=false">하의</div></router-link>
+                                    <router-link to="#"><div class="seboo_cate_c" @click="sidecheck=false">신발</div></router-link>
+                                    <router-link to="#"><div class="seboo_cate_c" @click="sidecheck=false">모자</div></router-link>
+                                    <router-link to="#"><div class="seboo_cate_c" @click="sidecheck=false">모자</div></router-link>
+                                    <router-link to="#"><div class="seboo_cate_c" @click="sidecheck=false">속옷/잠옷</div></router-link>
+                                    <router-link to="#"><div class="seboo_cate_c" @click="sidecheck=false">한벌옷</div></router-link>
+                                    <router-link to="#"><div class="seboo_cate_c" @click="sidecheck=false">정장Set</div></router-link>
+                                </div>
+                            </div>
+                            <div class="seboo_cate_a">여성의류<ion-icon name="caret-forward" class="ic_po"></ion-icon>
+                                <div class="seboo_cate_b">
+                                    <router-link to="#"><div class="seboo_cate_c" @click="sidecheck=false">상의</div></router-link>
+                                    <router-link to="#"><div class="seboo_cate_c" @click="sidecheck=false">하의</div></router-link>
+                                    <router-link to="#"><div class="seboo_cate_c" @click="sidecheck=false">신발</div></router-link>
+                                    <router-link to="#"><div class="seboo_cate_c" @click="sidecheck=false">모자</div></router-link>
+                                    <router-link to="#"><div class="seboo_cate_c" @click="sidecheck=false">모자</div></router-link>
+                                    <router-link to="#"><div class="seboo_cate_c" @click="sidecheck=false">속옷/잠옷</div></router-link>
+                                    <router-link to="#"><div class="seboo_cate_c" @click="sidecheck=false">한벌옷</div></router-link>
+                                    <router-link to="#"><div class="seboo_cate_c" @click="sidecheck=false">정장Set</div></router-link>
+                                </div>
+                            </div>
+                            <div class="seboo_cate_a">유아동<ion-icon name="caret-forward" class="ic_po3"></ion-icon>
+                                <div class="seboo_cate_b">
+                                    <router-link to=""><div class="seboo_cate_c" @click="sidecheck=false">유아기 한벌옷</div></router-link>
+                                    <router-link to=""><div class="seboo_cate_c" @click="sidecheck=false">유아기 상의</div></router-link>
+                                    <router-link to=""><div class="seboo_cate_c" @click="sidecheck=false">유아기 하의</div></router-link>
+                                    <router-link to=""><div class="seboo_cate_c" @click="sidecheck=false">유아기 모자</div></router-link>
+                                    <router-link to=""><div class="seboo_cate_c" @click="sidecheck=false">유아기 가방/잡화</div></router-link>
+                                    <router-link to=""><div class="seboo_cate_c" @click="sidecheck=false">유아기 신발</div></router-link>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </transition>
         </div>
         <div class="marketlist">
+            <div class="cate_top10">이달의 패션아이템 TOP10</div>
             <ul>
                 <li :key="item.id" v-for="item in items">
                     <a href="">

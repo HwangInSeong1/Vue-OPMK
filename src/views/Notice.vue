@@ -1,6 +1,6 @@
 <template>
     <div>
-        <h1>이것이 세번째 페이지입니다.</h1>
+        <h1>공지사항</h1>
     </div>    
 </template>
 
