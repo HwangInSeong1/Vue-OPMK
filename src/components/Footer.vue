@@ -3,7 +3,7 @@
         <div class="fttop"></div>
         <div class="ft">
             <div class="ftimg">
-                <img src="../assets/underOM.png" width=200px>
+                <img src="../assets/underOM.png">
             </div>
             <div class="ftinfo">
                 <h5>

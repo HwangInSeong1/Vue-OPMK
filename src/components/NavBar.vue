@@ -43,8 +43,8 @@
                 <div><ion-icon name="link-outline" class="mnic"></ion-icon></div>연계사이트
                 </router-link>
                 <ul>
-                    <li><router-link to="#">당근마켓</router-link></li>
-                    <li><router-link to="#">G마켓</router-link></li>
+                    <li><a href="https://www.daangn.com/" target="_blank">당근마켓</a></li>
+                    <li><a href="https://www.gmarket.co.kr/">G마켓</a></li>
                 </ul>
             </li>
             <li><router-link to="#">
