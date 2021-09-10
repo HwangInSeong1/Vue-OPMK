@@ -4,7 +4,7 @@
             <router-link to="/Notice" style="background-color:#008793;color:white;">공지사항</router-link>
             <router-link to="/OnetoOne">1:1 문의</router-link>
             <router-link to="/FAQ">자주묻는 질문(FAQ)</router-link>
-            <router-link to="">기타문의(광고)</router-link>
+            <router-link to="/Adver">기타문의(광고)</router-link>
         </div>
         <div class="notice_dsn">
             공지사항
@@ -26,22 +26,22 @@
         data(){
             return {
                 notices : [
-                    {id:16, title:'[공지] 위해 상품정보 안내', date:'2021-09-24', contents:'공지 내용 이미지16', ct_vw : false ,ic_vw1 : true, ic_vw2 : false},
-                    {id:15, title:'[공지] 사이트 오류 및 조치 안내', date:'2021-09-22', contents:'공지 내용 이미지15', ct_vw : false ,ic_vw1 : true, ic_vw2 : false},
-                    {id:14, title:'[공지] 위해 상품정보 안내', date:'2021-09-20', contents:'공지 내용 이미지14', ct_vw : false ,ic_vw1 : true, ic_vw2 : false},
-                    {id:13, title:'[공지] 위해 상품정보 안내', date:'2021-09-18', contents:'공지 내용 이미지13', ct_vw : false ,ic_vw1 : true, ic_vw2 : false},
-                    {id:12, title:'[공지] 위해 상품정보 안내', date:'2021-09-17', contents:'공지 내용 이미지12', ct_vw : false ,ic_vw1 : true, ic_vw2 : false},
-                    {id:11, title:'[공지] 위해 상품정보 안내', date:'2021-09-16', contents:'공지 내용 이미지11', ct_vw : false ,ic_vw1 : true, ic_vw2 : false},
-                    {id:10, title:'[공지] 오픈마켓 약관 개정 안내', date:'2021-09-15', contents:'공지 내용 이미지10', ct_vw : false ,ic_vw1 : true, ic_vw2 : false},
-                    {id:9, title:'[공지] 위해 상품정보 안내', date:'2021-09-14', contents:'공지 내용 이미지9', ct_vw : false ,ic_vw1 : true, ic_vw2 : false},
-                    {id:8, title:'[공지] 위해 상품정보 안내', date:'2021-09-13', contents:'공지 내용 이미지8', ct_vw : false ,ic_vw1 : true, ic_vw2 : false},
-                    {id:7, title:'[공지] 위해 상품정보 안내', date:'2021-09-12', contents:'공지 내용 이미지7', ct_vw : false ,ic_vw1 : true, ic_vw2 : false},
-                    {id:6, title:'[공지] 위해 상품정보 안내', date:'2021-09-11', contents:'공지 내용 이미지6', ct_vw : false ,ic_vw1 : true, ic_vw2 : false},
-                    {id:5, title:'[공지] 위해 상품정보 안내', date:'2021-09-10', contents:'공지 내용 이미지5', ct_vw : false ,ic_vw1 : true, ic_vw2 : false},
-                    {id:4, title:'[공지] 위해 상품정보 안내', date:'2021-09-09', contents:'공지 내용 이미지4', ct_vw : false ,ic_vw1 : true, ic_vw2 : false},
-                    {id:3, title:'[공지] 위해 상품정보 안내', date:'2021-09-08', contents:'공지 내용 이미지3', ct_vw : false ,ic_vw1 : true, ic_vw2 : false},
-                    {id:2, title:'[공지] 위해 상품정보 안내', date:'2021-09-07', contents:'공지 내용 이미지2', ct_vw : false ,ic_vw1 : true, ic_vw2 : false},
-                    {id:1, title:'[공지] 오픈마켓 이용 안내', date:'2021-09-01', contents:'공지 내용 이미지1', ct_vw : false ,ic_vw1 : true, ic_vw2 : false},
+                    {id:16, title:'[공지] 위해 상품정보 안내', date:'2021-09-24', contents:'공지 내용 16', ct_vw : false ,ic_vw1 : true, ic_vw2 : false},
+                    {id:15, title:'[공지] 사이트 오류 및 조치 안내', date:'2021-09-22', contents:'공지 내용 15', ct_vw : false ,ic_vw1 : true, ic_vw2 : false},
+                    {id:14, title:'[공지] 위해 상품정보 안내', date:'2021-09-20', contents:'공지 내용 14', ct_vw : false ,ic_vw1 : true, ic_vw2 : false},
+                    {id:13, title:'[공지] 위해 상품정보 안내', date:'2021-09-18', contents:'공지 내용 13', ct_vw : false ,ic_vw1 : true, ic_vw2 : false},
+                    {id:12, title:'[공지] 위해 상품정보 안내', date:'2021-09-17', contents:'공지 내용 12', ct_vw : false ,ic_vw1 : true, ic_vw2 : false},
+                    {id:11, title:'[공지] 위해 상품정보 안내', date:'2021-09-16', contents:'공지 내용 11', ct_vw : false ,ic_vw1 : true, ic_vw2 : false},
+                    {id:10, title:'[공지] 오픈마켓 약관 개정 안내', date:'2021-09-15', contents:'공지 내용 10', ct_vw : false ,ic_vw1 : true, ic_vw2 : false},
+                    {id:9, title:'[공지] 위해 상품정보 안내', date:'2021-09-14', contents:'공지 내용 9', ct_vw : false ,ic_vw1 : true, ic_vw2 : false},
+                    {id:8, title:'[공지] 위해 상품정보 안내', date:'2021-09-13', contents:'공지 내용 8', ct_vw : false ,ic_vw1 : true, ic_vw2 : false},
+                    {id:7, title:'[공지] 위해 상품정보 안내', date:'2021-09-12', contents:'공지 내용 7', ct_vw : false ,ic_vw1 : true, ic_vw2 : false},
+                    {id:6, title:'[공지] 위해 상품정보 안내', date:'2021-09-11', contents:'공지 내용 6', ct_vw : false ,ic_vw1 : true, ic_vw2 : false},
+                    {id:5, title:'[공지] 위해 상품정보 안내', date:'2021-09-10', contents:'공지 내용 5', ct_vw : false ,ic_vw1 : true, ic_vw2 : false},
+                    {id:4, title:'[공지] 위해 상품정보 안내', date:'2021-09-09', contents:'공지 내용 4', ct_vw : false ,ic_vw1 : true, ic_vw2 : false},
+                    {id:3, title:'[공지] 위해 상품정보 안내', date:'2021-09-08', contents:'공지 내용 3', ct_vw : false ,ic_vw1 : true, ic_vw2 : false},
+                    {id:2, title:'[공지] 위해 상품정보 안내', date:'2021-09-07', contents:'공지 내용 2', ct_vw : false ,ic_vw1 : true, ic_vw2 : false},
+                    {id:1, title:'[공지] 오픈마켓 이용 안내', date:'2021-09-01', contents:'공지 내용 1', ct_vw : false ,ic_vw1 : true, ic_vw2 : false},
                 ],
             }
         },

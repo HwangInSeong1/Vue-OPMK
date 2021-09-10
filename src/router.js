@@ -5,6 +5,7 @@ import Market001 from "./views/Market001";
 import OnetoOne from "./views/OnetoOne";
 import Notice from "./views/Notice";
 import FAQ from "./views/FAQ";
+import Adver from "./views/Adver"
 
 Vue.use(VueRouter);
 
@@ -16,6 +17,7 @@ const router = new VueRouter({
         {path:"/Notice", component: Notice},
         {path:"/OnetoOne", component: OnetoOne},
         {path:"/FAQ", component: FAQ},
+        {path:"/Adver", component: Adver},
     ]
 })
 

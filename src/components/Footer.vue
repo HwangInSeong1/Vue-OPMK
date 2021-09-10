@@ -33,7 +33,7 @@
                 <router-link to=#><span>개인정보처리방침</span><br></router-link>
                 <router-link to=#><span>저작권정책</span><br></router-link>
                 <router-link to=#><span>회사소개</span><br></router-link>
-                <router-link to=#><span>고객센터</span><br></router-link>
+                <router-link to="/Onetoone"><span>고객센터</span><br></router-link>
                 <router-link to=#><span>인재채용</span></router-link>
             </div>
         </div>

@@ -2,14 +2,14 @@
     <div>
         <div class="insideNavbar">
             <router-link to="/Notice">공지사항</router-link>
-            <router-link to="/OnetoOne" style="background-color:#008793;color:white;">1:1 문의</router-link>
+            <router-link to="/OnetoOne">1:1 문의</router-link>
             <router-link to="/FAQ">자주묻는 질문(FAQ)</router-link>
-            <router-link to="/Adver">기타문의(광고)</router-link>
+            <router-link to="/Adver" style="background-color:#008793;color:white;">기타문의(광고)</router-link>
         </div>
-        <div class="oneandone_dsn">
-            1:1 문의
+        <div class="adver_dsn">
+            기타문의(광고)
         </div>
-        <div class="oneandone"></div>
+        <div class="adver"></div>
     </div>    
 </template>
 
@@ -19,7 +19,7 @@
 </script>
 
 <style>
-.oneandone_dsn {
+.adver_dsn {
     width:1220px;
     height:100px;
     line-height:100px;
@@ -30,7 +30,7 @@
     color:white;
     padding-left:30px;
 }
-.oneandone {
+.adver {
     width:1220px;
     height: 800px;
 }

@@ -3,7 +3,7 @@
         
         <div class="loginBar">
             <router-link to="/"><div class="logo"><img src="../assets/OpenMarket.png" class="logoimg"></div></router-link>
-            <span>고객센터</span>
+            <span><router-link to="/Onetoone" class="link_center">고객센터</router-link></span>
             <span @click="modalcheck = true, signmodal = true, loginmodal=false">SignUp</span>
             <span @click="modalcheck = true">Login</span>
             <span><Search /></span> <!-- 검색창 컴포넌트 -->
@@ -97,4 +97,9 @@ export default {
 
 <style>
 @import url(../css/Login_SignBar.css);
+.link_center {
+    text-decoration: none;
+    color:black;
+    padding:2px;
+}
 </style>
