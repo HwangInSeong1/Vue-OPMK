@@ -1,6 +1,6 @@
 <template>
-<div>
-    <swiper class="swiper" ref="mySwiper" 
+<div> <!-- swiper 프로그램 이용해서 슬라이드 구현 -->
+    <swiper class="swiper" ref="mySwiper" style="width:1400px;"
 		:options="swiperOptions" 
 		@slideChange="slideChangeTransitionStart"
 	>
@@ -14,9 +14,29 @@
 		<div class="swiper-button-prev swiper-btn-prev" slot="button-prev" style="color:white;text-shadow:2px 2px 2px gray"></div>
 		<div class="swiper-button-next swiper-btn-next" slot="button-next" style="color:white;text-shadow:2px 2px 2px gray"></div>
 	</swiper>
-	<div class="maintitle">오늘의 발견! TOP 9</div>
+	<div class="maintitle">오늘의 발견! TOP 12</div> <!-- 하드코딩 구현 -->
     <div class="mainpage">
             <div class="mainflex">
+				<div class="screen_m">
+					<div class="scrtext_m">구매하러가기</div>
+				</div>
+			</div>
+			<div class="mainflex">
+				<div class="screen_m">
+					<div class="scrtext_m">구매하러가기</div>
+				</div>
+			</div>
+			<div class="mainflex">
+				<div class="screen_m">
+					<div class="scrtext_m">구매하러가기</div>
+				</div>
+			</div>
+			<div class="mainflex">
+				<div class="screen_m">
+					<div class="scrtext_m">구매하러가기</div>
+				</div>
+			</div>
+			<div class="mainflex">
 				<div class="screen_m">
 					<div class="scrtext_m">구매하러가기</div>
 				</div>
@@ -80,7 +100,7 @@ export default {
                 ads : [
                     {num:1, adsimg : require('../assets/adsimg/adsimg001.png')},
                     {num:2, adsimg : require('../assets/adsimg/adsimg002.png')},
-                    {num:3, adsimg : require('../assets/listimg/image05.jpg')},
+                    {num:3, adsimg : require('../assets/adsimg/adsimg005.jpg')},
 					{num:4, adsimg : require('../assets/adsimg/adsimg003.png')},
 					{num:4, adsimg : require('../assets/adsimg/adsimg004.jpg')},
                 ],

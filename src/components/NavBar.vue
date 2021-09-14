@@ -27,16 +27,16 @@
                 </ul>
             </li>
             <li>
-                <router-link to="/Two">판매 등록하기</router-link>
+                <router-link to="#">판매 등록하기</router-link>
             </li>
             <li><router-link to="">
                 <div><ion-icon name="notifications-outline" class="mnic_notice"></ion-icon></div>알림 및 문의
                 </router-link>
                 <ul>
                     <li><router-link to="/Notice">공지사항</router-link></li>
-                    <li><router-link to="#">1:1 문의</router-link></li>
-                    <li><router-link to="#">F A Q</router-link></li>
-                    <li><router-link to="#">기타 광고문의</router-link></li>
+                    <li><router-link to="/OnetoOne">1:1 문의</router-link></li>
+                    <li><router-link to="/FAQ">F A Q</router-link></li>
+                    <li><router-link to="/Adver">기타 광고문의</router-link></li>
                 </ul>
             </li>
             <li><router-link to="#">

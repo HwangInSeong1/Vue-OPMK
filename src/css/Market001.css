@@ -30,7 +30,7 @@
 .marketlist > ul > li {
     display:inline-block;
     vertical-align:top;
-    width:25%;
+    width:20%;
 }
 .marketlist > ul > li > a {
     display:block;
@@ -44,8 +44,8 @@
 }
 .marketlist > ul > li > a .screen .top {
     position:absolute;
-    bottom:150%;
-    left:30px;
+    bottom:100%;
+    left:10px;
     z-index:2;
     color:#fff;
     font-size:26px;
@@ -54,29 +54,34 @@
 }
 .marketlist > ul > li > a .screen .bottom {
     position:absolute;
-    top:150%;
-    left:30px;
+    top:100%;
+    left:10px;
     z-index:2;
     color:#fff;
     font-size:12px;
     transition:all .35s;
 }
 .marketlist > ul > li > a .screen img {
-    width:300px;
-    height: 200px;
+    width:250px;
+    height: 300px;
+    object-fit: contain;
 }
 .marketlist > ul > li > a h3 {
-    font-size:14px;
+    font-size:18px;
     text-align:center;
-    padding:20px;
-    color:#666;
+    width:250px;
+    height:80px;
+    padding-top:10px;
+    color:rgb(0, 0, 0);
+    overflow: hidden;
+    
 }
 .marketlist > ul > li > a .screen::after {
     content:'';
     display:block;
     position:absolute;
     top:0;left:0;
-    width:300px;
+    width:250px;
     height:100%;
     background:rgba(0,0,0,.5);
     z-index:1;
@@ -84,10 +89,10 @@
     transition:all .35s;
 }
 .marketlist > ul > li > a:hover .top {
-    bottom:52%;
+    bottom:85%;
 }
 .marketlist > ul > li > a:hover .bottom {
-    top:52%;
+    top:85%;
 }
 .marketlist > ul > li > a:hover .screen::after {
     opacity:1;
@@ -212,14 +217,24 @@
     margin-right:-15px;
 }
 .cate_top10 {
-    margin-top:20px;
-    position: absolute;
-    left:90px;
+    max-width:1360px;
+    width:1360px;
+    margin:-50px auto;
+    margin-top:50px;
+    font-size:20pt;
+    font-weight: bold;
+    color:#003597ad;
+    text-shadow: 3px 3px 3px rgb(197, 197, 197);
+}
+.cate_subtitle {
+    max-width:1360px;
+    width:1360px;
+    margin:-50px auto;
+    margin-top:50px;
     font-size:20pt;
     font-weight: bold;
     text-shadow: 3px 3px 3px rgb(197, 197, 197);
 }
-
 @media(max-width:755px){
     .marketlist {
         max-width:750px;

@@ -1,6 +1,6 @@
 <template>
     <div>
-      <a href="#lc_top"><div class="topBar"> Top </div></a>
+      <a href="#lc_top"><div class="topBar"> Top </div></a> <!-- 페이지 맨 상단으로 올리는 버튼 -->
       <LoginSignBar id="lc_top" />
       <NavBar />
       <div>

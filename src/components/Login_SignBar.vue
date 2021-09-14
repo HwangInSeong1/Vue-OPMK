@@ -8,11 +8,11 @@
             <span @click="modalcheck = true">Login</span>
             <span><Search /></span> <!-- 검색창 컴포넌트 -->
         </div>
-        <transition name="slide-fade">
-            <div class="modalout" v-if="modalcheck">
+        <transition name="slide-fade"> <!-- Vue 애니메이션 효과 적용 -->
+            <div class="modalout" v-if="modalcheck"> <!-- 모달창으로 회원가입 로그인 창 구현 -->
                 <div class="modalin" v-if="loginmodal">
                     <form action="#" method="post" class="loginForm">
-                        <h2>Login</h2>
+                        <h2>Login</h2> <!-- 로그인 -->
                         <div class="idForm">
                             <input type="text" class="id" placeholder="ID">
                         </div>
@@ -31,7 +31,7 @@
 
                 <div class="modalin_sign" v-if="signmodal">
                 <form action="#" method="post" class="signForm">
-                <h2>SignUp</h2>
+                <h2>SignUp</h2> <!-- 회원가입 -->
 
                 <div class="input_Sign">
                     <span class="span01">ID</span> <span class="span02"> <input type="text" class="ipsi" placeholder="ID INPUT " size=28 required></span><br>
@@ -70,7 +70,7 @@
                         <div class="signlogo"></div>
                     </div>
                 </div>
-                <div class="xbox_sign" @click="modalcheck = false, signmodal = false, loginmodal = true">
+                <div class="xbox_sign" @click="modalcheck = false, signmodal = false, loginmodal = true"> <!-- 모달창 닫기 -->
                     x
                 </div>
             </div>

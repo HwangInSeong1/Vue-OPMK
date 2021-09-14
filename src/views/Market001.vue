@@ -56,7 +56,25 @@
                             <img :src="item.img" />
                         </div>
                         <div>
-                            <h3>{{ item.btitle }}</h3>
+                            <h3 v-html='item.btitle.replace("\n", "<br />")'></h3>
+                        </div>
+                    </a>
+                </li>
+            </ul>
+        </div>
+        <div style="max-width:1360px;width:1360px;border-top:1px solid gray;margin:0 auto;margin-top:-30px;padding-top:20px;"></div>
+        <div class="marketlist">
+            <div class="cate_subtitle">남성의류 / 정장</div>
+            <ul>
+                <li :key="item2.id" v-for="item2 in items2">
+                    <a href="">
+                        <div class="screen">
+                            <div class="top">{{ item2.stitle }}</div>
+                            <div class="bottom">판매자 : {{ item2.maker }} <br> 클릭하면 해당상품 페이지로 이동합니다.</div>
+                            <img :src="item2.img" />
+                        </div>
+                        <div>
+                            <h3 v-html='item2.btitle.replace("\n", "<br />")'></h3>
                         </div>
                     </a>
                 </li>
@@ -71,15 +89,28 @@ export default {
         data() {
             return {
                 items : [
-                    {id: 1 , stitle : 'Code .001', maker: 'INSEONG', btitle: 'Item 001', img: require('../assets/listimg/image01.jpg')},
-                    {id: 2 , stitle : 'Code .002', maker: 'INSEONG', btitle: 'Item 002', img: require('../assets/listimg/image02.jpg')},
-                    {id: 3 , stitle : 'Code .003', maker: 'INSEONG', btitle: 'Item 003', img: require('../assets/listimg/image03.jpg')},
-                    {id: 4 , stitle : 'Code .004', maker: 'INSEONG', btitle: 'Item 004', img: require('../assets/listimg/image04.jpg')},
-                    {id: 5 , stitle : 'Code .005', maker: 'INSEONG', btitle: 'Item 005', img: require('../assets/listimg/image05.jpg')},
-                    {id: 6 , stitle : 'Code .006', maker: 'INSEONG', btitle: 'Item 006', img: require('../assets/listimg/image06.jpg')},
-                    {id: 7 , stitle : 'Code .007', maker: 'INSEONG', btitle: 'Item 007', img: require('../assets/listimg/image07.jpg')},
-                    {id: 8 , stitle : 'Code .008', maker: 'INSEONG', btitle: 'Item 008', img: require('../assets/listimg/image07.jpg')},
-                    {id: 8 , stitle : 'Code .008', maker: 'INSEONG', btitle: 'Item 008', img: require('../assets/listimg/image07.jpg')},
+                    {id: 1 , stitle : 'Code .T001', maker: 'INSEONG', btitle: '[니]NII 남녀 맨투맨 외 + 추가중복쿠폰혜택 - <b style="color:#008793;">76,000원</b>', img: require('../assets/listimg/image01.jpg')},
+                    {id: 2 , stitle : 'Code .T002', maker: 'INSEONG', btitle: '남성의류 자료이미지 예시 1번 - <b style="color:#008793;">32,000원</b>', img: require('../assets/listimg/image02.jpg')},
+                    {id: 3 , stitle : 'Code .T003', maker: 'INSEONG', btitle: '남성의류 자료이미지 예시 2번 - <b style="color:#008793;">35,000원</b>', img: require('../assets/listimg/image01.jpg')},
+                    {id: 4 , stitle : 'Code .T004', maker: 'INSEONG', btitle: '남성의류 자료이미지 예시 3번 - <b style="color:#008793;">35,000원</b>', img: require('../assets/listimg/image02.jpg')},
+                    {id: 5 , stitle : 'Code .T005', maker: 'INSEONG', btitle: '남성 슬렉스바지 - <b style="color:#008793;">30,000원</b>', img: require('../assets/listimg/image03.jpg')},
+                    {id: 6 , stitle : 'Code .T006', maker: 'INSEONG', btitle: '스파이더 기능성 티 \n - <b style="color:#008793;">20,000원</b>', img: require('../assets/listimg/image04.jpg')},
+                    {id: 7 , stitle : 'Code .T007', maker: 'INSEONG', btitle: '스톤아일랜드 티셔츠 1번 - <b style="color:#008793;">70,000원</b>', img: require('../assets/listimg/image05.jpg')},
+                    {id: 8 , stitle : 'Code .T008', maker: 'INSEONG', btitle: '스톤아일랜드 티셔츠 1번 - <b style="color:#008793;">70,000원</b>', img: require('../assets/listimg/image05.jpg')},
+                    {id: 9 , stitle : 'Code .T009', maker: 'INSEONG', btitle: '스톤아일랜드 티셔츠 1번 - <b style="color:#008793;">70,000원</b>', img: require('../assets/listimg/image05.jpg')},
+                    {id: 10 , stitle : 'Code .T010', maker: 'INSEONG', btitle: '예시', img: require('../assets/logo.png')},
+                    ],
+                items2 : [
+                    {id: 1 , stitle : 'Code .SU001', maker: 'INSEONG', btitle: '남성정장 자료이미지 예시 1번 - <b style="color:#008793;">123,000원</b>', img: require('../assets/listimg/suit/suitimg01.jpg')},
+                    {id: 2 , stitle : 'Code .SU002', maker: 'INSEONG', btitle: '남성정장 자료이미지 예시 2번 - <b style="color:#008793;">150,000원</b>', img: require('../assets/listimg/suit/suitimg02.jpg')},
+                    {id: 3 , stitle : 'Code .SU003', maker: 'INSEONG', btitle: '남성정장 자료이미지 예시 3번 - <b style="color:#008793;">135,000원</b>', img: require('../assets/listimg/suit/suitimg03.jpg')},
+                    {id: 4 , stitle : 'Code .SU004', maker: 'INSEONG', btitle: '남성정장 자료이미지 예시 4번 - <b style="color:#008793;">110,000원</b>', img: require('../assets/listimg/suit/suitimg04.jpg')},
+                    {id: 5 , stitle : 'Code .SU005', maker: 'INSEONG', btitle: '남성정장 자료이미지 예시 5번 - <b style="color:#008793;">200,000원</b>', img: require('../assets/listimg/suit/suitimg05.jpg')},
+                    {id: 6 , stitle : 'Code .SU006', maker: 'INSEONG', btitle: '남성정장 자료이미지 예시 6번 - <b style="color:#008793;">200,000원</b>', img: require('../assets/listimg/suit/suitimg01.jpg')},
+                    {id: 7 , stitle : 'Code .SU007', maker: 'INSEONG', btitle: '남성정장 자료이미지 예시 7번 - <b style="color:#008793;">170,000원</b>', img: require('../assets/listimg/suit/suitimg03.jpg')},
+                    {id: 8 , stitle : 'Code .SU008', maker: 'INSEONG', btitle: '남성정장 자료이미지 예시 8번 - <b style="color:#008793;">170,000원</b>', img: require('../assets/listimg/suit/suitimg04.jpg')},
+                    {id: 9 , stitle : 'Code .SU009', maker: 'INSEONG', btitle: '남성정장 자료이미지 예시 8번 - <b style="color:#008793;">170,000원</b>', img: require('../assets/listimg/suit/suitimg05.jpg')},
+                    {id: 10 , stitle : 'Code .SU010', maker: 'INSEONG', btitle: '예시 - <b style="color:#008793;">1,070,000원</b>', img: require('../assets/listimg/suit/suitimg03.jpg')},
                     ],
                 sidecheck: false,
             }

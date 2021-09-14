@@ -67,8 +67,8 @@
     border-bottom:1px solid #004d7a;
 }
 .ab_po_ic { /* ion-icons 절대위치 설정 */
-    position:absolute;
-    right:170px;
+    float:right;
+    padding-right:15px;
     padding-top:5px;
     font-size:22px;
 }
