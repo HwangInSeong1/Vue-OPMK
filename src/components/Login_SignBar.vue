@@ -57,7 +57,7 @@
                             <li><a href="#">
                                     <ion-icon name="logo-discord" class="discord_ic"></ion-icon>
                                 </a></li>
-                            <li><a href="#">
+                            <li><a href="https://github.com/HwangInSeong1/Vue-OPMK">
                                     <ion-icon name="logo-github" class="github_ic"></ion-icon>
                                 </a></li>
                             <li><a href="#">
