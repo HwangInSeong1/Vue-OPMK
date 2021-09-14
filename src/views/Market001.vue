@@ -49,7 +49,7 @@
             <div class="cate_top10">이달의 패션아이템 TOP10</div>
             <ul>
                 <li :key="item.id" v-for="item in items">
-                    <a href="">
+                    <router-link :to=" item.area ">
                         <div class="screen">
                             <div class="top">{{ item.stitle }}</div>
                             <div class="bottom">판매자 : {{ item.maker }} <br> 클릭하면 해당상품 페이지로 이동합니다.</div>
@@ -58,7 +58,7 @@
                         <div>
                             <h3 v-html='item.btitle.replace("\n", "<br />")'></h3>
                         </div>
-                    </a>
+                    </router-link>
                 </li>
             </ul>
         </div>
@@ -89,16 +89,16 @@ export default {
         data() {
             return {
                 items : [
-                    {id: 1 , stitle : 'Code .T001', maker: 'INSEONG', btitle: '[니]NII 남녀 맨투맨 외 + 추가중복쿠폰혜택 - <b style="color:#008793;">76,000원</b>', img: require('../assets/listimg/image01.jpg')},
-                    {id: 2 , stitle : 'Code .T002', maker: 'INSEONG', btitle: '남성의류 자료이미지 예시 1번 - <b style="color:#008793;">32,000원</b>', img: require('../assets/listimg/image02.jpg')},
-                    {id: 3 , stitle : 'Code .T003', maker: 'INSEONG', btitle: '남성의류 자료이미지 예시 2번 - <b style="color:#008793;">35,000원</b>', img: require('../assets/listimg/image01.jpg')},
-                    {id: 4 , stitle : 'Code .T004', maker: 'INSEONG', btitle: '남성의류 자료이미지 예시 3번 - <b style="color:#008793;">35,000원</b>', img: require('../assets/listimg/image02.jpg')},
-                    {id: 5 , stitle : 'Code .T005', maker: 'INSEONG', btitle: '남성 슬렉스바지 - <b style="color:#008793;">30,000원</b>', img: require('../assets/listimg/image03.jpg')},
-                    {id: 6 , stitle : 'Code .T006', maker: 'INSEONG', btitle: '스파이더 기능성 티 \n - <b style="color:#008793;">20,000원</b>', img: require('../assets/listimg/image04.jpg')},
-                    {id: 7 , stitle : 'Code .T007', maker: 'INSEONG', btitle: '스톤아일랜드 티셔츠 1번 - <b style="color:#008793;">70,000원</b>', img: require('../assets/listimg/image05.jpg')},
-                    {id: 8 , stitle : 'Code .T008', maker: 'INSEONG', btitle: '스톤아일랜드 티셔츠 1번 - <b style="color:#008793;">70,000원</b>', img: require('../assets/listimg/image05.jpg')},
-                    {id: 9 , stitle : 'Code .T009', maker: 'INSEONG', btitle: '스톤아일랜드 티셔츠 1번 - <b style="color:#008793;">70,000원</b>', img: require('../assets/listimg/image05.jpg')},
-                    {id: 10 , stitle : 'Code .T010', maker: 'INSEONG', btitle: '예시', img: require('../assets/logo.png')},
+                    {id: 1 , stitle : 'Code .T001',area:'/' ,maker: 'INSEONG', btitle: '[니]NII 남녀 맨투맨 외 + 추가중복쿠폰혜택 - <b style="color:#008793;">76,000원</b>', img: require('../assets/listimg/image01.jpg')},
+                    {id: 2 , stitle : 'Code .T002',area:'#' , maker: 'INSEONG', btitle: '남성의류 자료이미지 예시 1번 - <b style="color:#008793;">32,000원</b>', img: require('../assets/listimg/image02.jpg')},
+                    {id: 3 , stitle : 'Code .T003',area:'#' , maker: 'INSEONG', btitle: '남성의류 자료이미지 예시 2번 - <b style="color:#008793;">35,000원</b>', img: require('../assets/listimg/image01.jpg')},
+                    {id: 4 , stitle : 'Code .T004',area:'#' , maker: 'INSEONG', btitle: '남성의류 자료이미지 예시 3번 - <b style="color:#008793;">35,000원</b>', img: require('../assets/listimg/image02.jpg')},
+                    {id: 5 , stitle : 'Code .T005',area:'#' , maker: 'INSEONG', btitle: '남성 슬렉스바지 - <b style="color:#008793;">30,000원</b>', img: require('../assets/listimg/image03.jpg')},
+                    {id: 6 , stitle : 'Code .T006',area:'#' , maker: 'INSEONG', btitle: '스파이더 기능성 티 \n - <b style="color:#008793;">20,000원</b>', img: require('../assets/listimg/image04.jpg')},
+                    {id: 7 , stitle : 'Code .T007',area:'#' , maker: 'INSEONG', btitle: '스톤아일랜드 티셔츠 1번 - <b style="color:#008793;">70,000원</b>', img: require('../assets/listimg/image05.jpg')},
+                    {id: 8 , stitle : 'Code .T008',area:'#' , maker: 'INSEONG', btitle: '스톤아일랜드 티셔츠 1번 - <b style="color:#008793;">70,000원</b>', img: require('../assets/listimg/image05.jpg')},
+                    {id: 9 , stitle : 'Code .T009',area:'#' , maker: 'INSEONG', btitle: '스톤아일랜드 티셔츠 1번 - <b style="color:#008793;">70,000원</b>', img: require('../assets/listimg/image05.jpg')},
+                    {id: 10 , stitle : 'Code .T010',area:'#' , maker: 'INSEONG', btitle: '예시', img: require('../assets/logo.png')},
                     ],
                 items2 : [
                     {id: 1 , stitle : 'Code .SU001', maker: 'INSEONG', btitle: '남성정장 자료이미지 예시 1번 - <b style="color:#008793;">123,000원</b>', img: require('../assets/listimg/suit/suitimg01.jpg')},

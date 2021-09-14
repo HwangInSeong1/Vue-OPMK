@@ -11,8 +11,8 @@
 		<div class="swiper-pagination" slot="pagination"></div>
         
 		<!-- navigation -->
-		<div class="swiper-button-prev swiper-btn-prev" slot="button-prev" style="color:white;text-shadow:2px 2px 2px gray"></div>
-		<div class="swiper-button-next swiper-btn-next" slot="button-next" style="color:white;text-shadow:2px 2px 2px gray"></div>
+		<div class="swiper-button-prev swiper-btn-prev" slot="button-prev" style="color:white;text-shadow:2px 2px 2px gray;padding-left:10px;"></div>
+		<div class="swiper-button-next swiper-btn-next" slot="button-next" style="color:white;text-shadow:2px 2px 2px gray;padding-right:10px;"></div>
 	</swiper>
 	<div class="maintitle">오늘의 발견! TOP 12</div> <!-- 하드코딩 구현 -->
     <div class="mainpage">
