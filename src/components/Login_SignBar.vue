@@ -87,9 +87,9 @@ export default {
     },
     data(){
         return {
-            modalcheck : false,  
-            signmodal : false,
-            loginmodal : true,    
+            modalcheck : false,  // 로그인,회원가입창 모달체크값
+            signmodal : false, // 모달안에있는 회원가입창 체크값
+            loginmodal : true,   // 모달안에있는 로그인창 체크값
         }
     },
 };

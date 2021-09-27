@@ -12,12 +12,12 @@ Vue.use(VueRouter);
 const router = new VueRouter({
     mode: "history",
     routes: [
-        {path:"/", component: Home},
-        {path:"/Market001", component: Market001},
-        {path:"/Notice", component: Notice},
-        {path:"/OnetoOne", component: OnetoOne},
-        {path:"/FAQ", component: FAQ},
-        {path:"/Adver", component: Adver},
+        {path:"/", component: Home}, // 메인홈화면
+        {path:"/Market001", component: Market001}, // 상품진열 1번 패션
+        {path:"/Notice", component: Notice}, // 공지사항
+        {path:"/OnetoOne", component: OnetoOne}, // 1:1문의
+        {path:"/FAQ", component: FAQ}, // 자주묻는질문
+        {path:"/Adver", component: Adver}, // 광고문의
     ]
 })
 
