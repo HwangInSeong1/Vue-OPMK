@@ -4,7 +4,7 @@
             <li><router-link to=""><div><ion-icon name="grid-outline" class="mnic_cate"></ion-icon></div>카테고리</router-link>
                 <ul>
                     <li><router-link to="/Market001">패션의류/잡화</router-link></li>
-                    <li><router-link to="#">뷰티</router-link></li>
+                    <li><router-link to="/Market002">뷰티</router-link></li>
                     <li><router-link to="#">생활용품</router-link></li>
                     <li><router-link to="#">자동차용품</router-link></li>
                     <li><router-link to="#">식품</router-link></li>

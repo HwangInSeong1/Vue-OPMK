@@ -100,9 +100,8 @@ export default {
                 ads : [
                     {num:1, adsimg : require('../assets/adsimg/adsimg001.png')},
                     {num:2, adsimg : require('../assets/adsimg/adsimg002.png')},
-                    {num:3, adsimg : require('../assets/adsimg/adsimg005.jpg')},
-					{num:4, adsimg : require('../assets/adsimg/adsimg003.png')},
-					{num:4, adsimg : require('../assets/adsimg/adsimg004.jpg')},
+					{num:3, adsimg : require('../assets/adsimg/adsimg004.jpg')},
+					{num:4, adsimg : require('../assets/adsimg/adsimg005.jpg')},
                 ],
 				swiperOptions: {
 					loop: true,

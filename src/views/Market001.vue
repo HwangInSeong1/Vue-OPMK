@@ -89,16 +89,16 @@ export default {
         data() {
             return {
                 items : [
-                    {id: 1 , stitle : 'Code .T001',area:'/' ,maker: 'INSEONG', btitle: '[니]NII 남녀 맨투맨 외 + 추가중복쿠폰혜택 - <b style="color:#008793;">76,000원</b>', img: require('../assets/listimg/image01.jpg')},
-                    {id: 2 , stitle : 'Code .T002',area:'#' , maker: 'INSEONG', btitle: '남성의류 자료이미지 예시 1번 - <b style="color:#008793;">32,000원</b>', img: require('../assets/listimg/image02.jpg')},
-                    {id: 3 , stitle : 'Code .T003',area:'#' , maker: 'INSEONG', btitle: '남성의류 자료이미지 예시 2번 - <b style="color:#008793;">35,000원</b>', img: require('../assets/listimg/image01.jpg')},
-                    {id: 4 , stitle : 'Code .T004',area:'#' , maker: 'INSEONG', btitle: '남성의류 자료이미지 예시 3번 - <b style="color:#008793;">35,000원</b>', img: require('../assets/listimg/image02.jpg')},
-                    {id: 5 , stitle : 'Code .T005',area:'#' , maker: 'INSEONG', btitle: '남성 슬렉스바지 - <b style="color:#008793;">30,000원</b>', img: require('../assets/listimg/image03.jpg')},
-                    {id: 6 , stitle : 'Code .T006',area:'#' , maker: 'INSEONG', btitle: '스파이더 기능성 티 \n - <b style="color:#008793;">20,000원</b>', img: require('../assets/listimg/image04.jpg')},
-                    {id: 7 , stitle : 'Code .T007',area:'#' , maker: 'INSEONG', btitle: '스톤아일랜드 티셔츠 1번 - <b style="color:#008793;">70,000원</b>', img: require('../assets/listimg/image05.jpg')},
-                    {id: 8 , stitle : 'Code .T008',area:'#' , maker: 'INSEONG', btitle: '스톤아일랜드 티셔츠 1번 - <b style="color:#008793;">70,000원</b>', img: require('../assets/listimg/image05.jpg')},
-                    {id: 9 , stitle : 'Code .T009',area:'#' , maker: 'INSEONG', btitle: '스톤아일랜드 티셔츠 1번 - <b style="color:#008793;">70,000원</b>', img: require('../assets/listimg/image05.jpg')},
-                    {id: 10 , stitle : 'Code .T010',area:'#' , maker: 'INSEONG', btitle: '예시', img: require('../assets/logo.png')},
+                    {id: 1 , stitle : 'Code .T001',area:'/' ,maker: 'INSEONG', btitle: '[니]NII 남녀 맨투맨 외 + 추가중복쿠폰혜택 - <b style="color:#008793;">76,000원</b>', img: require('../assets/listimg/top10/image01.jpg')},
+                    {id: 2 , stitle : 'Code .T002',area:'#' , maker: 'INSEONG', btitle: '남성의류 자료이미지 예시 1번 - <b style="color:#008793;">32,000원</b>', img: require('../assets/listimg/top10/image02.jpg')},
+                    {id: 3 , stitle : 'Code .T003',area:'#' , maker: 'INSEONG', btitle: '남성의류 자료이미지 예시 2번 - <b style="color:#008793;">35,000원</b>', img: require('../assets/listimg/top10/image01.jpg')},
+                    {id: 4 , stitle : 'Code .T004',area:'#' , maker: 'INSEONG', btitle: '남성의류 자료이미지 예시 3번 - <b style="color:#008793;">35,000원</b>', img: require('../assets/listimg/top10/image02.jpg')},
+                    {id: 5 , stitle : 'Code .T005',area:'#' , maker: 'INSEONG', btitle: '남성 슬렉스바지 - <b style="color:#008793;">30,000원</b>', img: require('../assets/listimg/top10/image03.jpg')},
+                    {id: 6 , stitle : 'Code .T006',area:'#' , maker: 'INSEONG', btitle: '스파이더 기능성 티 \n - <b style="color:#008793;">20,000원</b>', img: require('../assets/listimg/top10/image04.jpg')},
+                    {id: 7 , stitle : 'Code .T007',area:'#' , maker: 'INSEONG', btitle: '스톤아일랜드 티셔츠 1번 - <b style="color:#008793;">70,000원</b>', img: require('../assets/listimg/top10/image05.jpg')},
+                    {id: 8 , stitle : 'Code .T008',area:'#' , maker: 'INSEONG', btitle: '스톤아일랜드 티셔츠 1번 - <b style="color:#008793;">70,000원</b>', img: require('../assets/listimg/top10/image05.jpg')},
+                    {id: 9 , stitle : 'Code .T009',area:'#' , maker: 'INSEONG', btitle: '스톤아일랜드 티셔츠 1번 - <b style="color:#008793;">70,000원</b>', img: require('../assets/listimg/top10/image05.jpg')},
+                    {id: 10 , stitle : 'Code .T010',area:'#' , maker: 'INSEONG', btitle: '예시', img: require('../assets/listimg/top10/image05.jpg')},
                     ],
                 items2 : [
                     {id: 1 , stitle : 'Code .SU001', maker: 'INSEONG', btitle: '남성정장 자료이미지 예시 1번 - <b style="color:#008793;">123,000원</b>', img: require('../assets/listimg/suit/suitimg01.jpg')},
@@ -119,5 +119,5 @@ export default {
 </script>
 
 <style>
-@import url(../css/Market001.css);
+@import url(../css/Market.css);
 </style>
