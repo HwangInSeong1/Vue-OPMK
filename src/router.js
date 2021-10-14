@@ -5,6 +5,7 @@ import OnetoOne from "./views/OnetoOne";
 import Notice from "./views/Notice";
 import FAQ from "./views/FAQ";
 import Adver from "./views/Adver"
+import Gready from "./views/Gready";
 
 import Market001 from "./views/Market001";
 import Market002 from "./views/Market002";
@@ -22,6 +23,8 @@ const router = new VueRouter({
         {path:"/OnetoOne", component: OnetoOne}, // 1:1문의
         {path:"/FAQ", component: FAQ}, // 자주묻는질문
         {path:"/Adver", component: Adver}, // 광고문의
+
+        {path:"/Gready", component: Gready}, //준비중
     ]
 })
 
