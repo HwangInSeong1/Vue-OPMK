@@ -34,11 +34,12 @@
                 <h2>SignUp</h2> <!-- 회원가입 -->
 
                 <div class="input_Sign">
-                    <span class="span01">ID</span> <span class="span02"> <input type="text" class="ipsi" placeholder="ID INPUT " size=28 required></span><br>
-                    <span class="span01">PW</span> <span class="span02"> <input type="password" class="ipsi" placeholder="PASSWORD INPUT" size=28 required></span><br>
-                    <span class="span01">PHONE</span> <span class="span02"> <input type="text" class="ipsi" placeholder="- 빼고 입력하세요." size=28 required></span><br>
-                    <span class="span01" style="padding:2px;">GENDER</span> <span class="span02"> &nbsp;<input type="radio" name="gender" value="m">남자 &nbsp;<input type="radio" name="gender" value="f">여자 </span><br>
-                    <span class="span01">BIRTH</span> <span class="span02"> <input type="text" class="ipsi" placeholder="EX) 19960727" size=28 required></span><br>
+                    <span class="span01">ID</span> <span class="span02"> <input type="text" v-model="user.userid" class="ipsi" placeholder="ID INPUT " size=28 required></span><br>
+                    <span class="span01">PW</span> <span class="span02"> <input type="password" v-model="user.password" class="ipsi" placeholder="PASSWORD INPUT" size=28 required></span><br>
+                    <span class="span01">NAME</span> <span class="span02"> <input type="text" v-model="user.name" class="ipsi" placeholder="이름" size=28 required></span><br>
+                    <span class="span01">PHONE</span> <span class="span02"> <input type="text" v-model="user.phone" class="ipsi" placeholder="- 빼고 입력하세요." size=28 required></span><br>
+                    <span class="span01" style="padding:2px;">GENDER</span> <span class="span02"> &nbsp;<input type="radio"  v-model="user.gender" name="gender" value="m">남자 &nbsp;<input type="radio" v-model="user.gender" name="gender" value="f">여자 </span><br>
+                    <span class="span01">BIRTH</span> <span class="span02"> <input type="text" v-model="user.birth" class="ipsi" placeholder="EX) 19960727" size=28 required></span><br>
                     <span>
                         <div style="margin-top:5px;">제 1약관 <a href="#">[자세히보기]</a> <span class="emptyspace"></span>
                             <input type="checkbox" name="check" value="ck" required> 동의합니다.</div>
@@ -85,13 +86,40 @@ export default {
     name : 'LoginSignBar',
     components: {Search, // 검색vue import
     },
-    data(){
+    data() {
         return {
+          user: {
+                userid: "",
+                password:"",
+                name: "",
+                phone: "",
+                gender: "",
+                birth: "",
+            },
             modalcheck : false,  // 로그인,회원가입창 모달체크값
             signmodal : false, // 모달안에있는 회원가입창 체크값
             loginmodal : true,   // 모달안에있는 로그인창 체크값
         }
     },
+    // method: {
+    //     signUp: function (event) {
+    //        this.$http.post("/api/users/signUp", {
+    //            user: this.user,
+    //        }) 
+    //        .then((res) => {
+    //            if(res.data.success == true) {
+    //                alert(res.data.message);
+    //                this.$router.push("/login");
+    //            }
+    //            if(res.data.success == false) {
+    //                alert(res.data.message);
+    //            }
+    //        })
+    //        .catch(function (error){
+    //            alert("error");
+    //        });
+    //     }
+    // },
 };
 </script>
 
