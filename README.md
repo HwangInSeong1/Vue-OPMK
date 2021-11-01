@@ -88,3 +88,16 @@ G마켓이나 옥션같은 오픈마켓을 좀더 부드럽고 컴포넌트형�
 ```
 자주묻는 질문이나 공지사항들을 위와같은 이미지처럼 구현했습니다.
 ```
+### 앞으로 추가해야할 사항
+```
+회원DB, 상품DB 생성 및 연동
+세션 유지, 보안
+```
+
+
+### 참고자료
+   1. https://kr.vuejs.org/v2/guide/index.html Vue.js 기본다루기
+   2. https://www.gmarket.co.kr/ 국내 대표 오픈마켓 사이트 구조 보기
+   3. https://opentutorials.org/course/608/3053 아마존 웹서비스 기본 사용법
+   4. https://www.hani.co.kr/arti/economy/consumer/977461.html  
+      통계청 온라인 거래규모 성장
