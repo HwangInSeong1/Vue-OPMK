@@ -1,8 +1,23 @@
 # opmk
-이것은 졸업작품용 프로젝트 "오픈마켓" 입니다.
+온라인 전자상거래 프로젝트 "오픈마켓" 입니다.
+
+## 개발환경
+```
+
+Front-end: Vue.js, Bootstrap-vue
+Back-end: Node.js Express
+DBMS: Mysql
+Server: WAS - nginx +Node.js,
+Auth Server: nginx + Node.js,
+File Server: nginx, AWS, 운영체제 ubuntu 20.04 LTS
+IDE: Visual Studio Code
+
+```
 
 ## Project setup
 ```
+vs-code 설치
+vs-code 터미널 열고
 
 Node.js 설치 https://nodejs.org/en/
 ->
@@ -19,20 +34,14 @@ npm i vue-awesome-swiper
 
 ### 프로젝트 실행방법
 ```
+해당 폴더에서
 yarn serve
 ```
 
-### Compiles and minifies for production
-```
-yarn build
+### 기본 사이트 메뉴 틀
 ```
 
-### Lints and fixes files
-```
-yarn lint
 ```
 
-### 결과화면
-![캡처1](https://user-images.githubusercontent.com/66094508/133199567-8114c055-a7a8-42b3-a820-6a963faf72b7.PNG)
-![캡처2](https://user-images.githubusercontent.com/66094508/133199570-e617a06e-8be0-4f88-9763-1d6f8bf67ef3.PNG)
-![캡처3](https://user-images.githubusercontent.com/66094508/133199571-f9a774fd-b3f7-425f-b0ee-baa43ff6cbd7.PNG)
+### 결과화면 및 설명
+
