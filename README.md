@@ -41,9 +41,9 @@ yarn serve
 ```
 
 ### 기본 사이트 메뉴 틀
-```
+
 ![Menu 구조](https://user-images.githubusercontent.com/66094508/139628181-31dfa757-1644-4755-aa50-ed8709646222.PNG)
-```
+
 
 ### 결과화면 및 설명
 ```
