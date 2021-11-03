@@ -13,7 +13,7 @@ File Server: nginx, AWS, 운영체제 ubuntu 20.04 LTS
 IDE: Visual Studio Code
 
 
-현재 http://3.35.220.234:8080/ 로 서버구동중
+현재 http://3.36.93.66:8080/ 로 서버구동중
 ```
 
 ## Project setup
