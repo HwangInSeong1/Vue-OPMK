@@ -97,12 +97,14 @@ export default {
 		},
 		data() {
 			return {
+				// 광고 리스트
                 ads : [
                     {num:1, adsimg : require('../assets/adsimg/adsimg001.png')},
                     {num:2, adsimg : require('../assets/adsimg/adsimg002.png')},
 					{num:3, adsimg : require('../assets/adsimg/adsimg004.jpg')},
 					{num:4, adsimg : require('../assets/adsimg/adsimg005.jpg')},
                 ],
+				// 스와이퍼 옵션
 				swiperOptions: {
 					loop: true,
 					autoplay: {delay:3000,disableOnInteraction: false},
