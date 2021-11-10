@@ -86,6 +86,13 @@ export default {
     name : 'LoginSignBar',
     components: {Search, // 검색vue import
     },
+    created: function (){
+            console.log('테스트', this.test);
+        this.$http.get('/api/test').then(res=>{
+            this.test = res.data;
+            console.log('테스트', this.test);
+        });
+    },
     data() {
         return {
           user: {
@@ -99,6 +106,7 @@ export default {
             modalcheck : false,  // 로그인,회원가입창 모달체크값
             signmodal : false, // 모달안에있는 회원가입창 체크값
             loginmodal : true,   // 모달안에있는 로그인창 체크값
+            test: [], // 테스트
         }
     },
     // method: {
