@@ -20,8 +20,8 @@
     height: 70px;
     
 }
-
-.loginBar > span {
+/*  로그인 css */
+.loginBar > span { 
     float: right;
     margin-right:5px;
     margin-top:32px;
@@ -34,7 +34,7 @@
     border-radius: 10px;
 }
 
-.loginBar > span:nth-child(5) { /* 검색창 */
+.loginBar > span:nth-child(5) { /* 검색창 */ 
     border:none;
     position: absolute;
     top:0;left:0;
@@ -172,7 +172,7 @@
 .slide-fade-enter, .slide-fade-leave-to {
     opacity: 0;
 }
-
+/*  회원가입 css */
 .modalin_sign{
     width:400px; 
     height:700px;
