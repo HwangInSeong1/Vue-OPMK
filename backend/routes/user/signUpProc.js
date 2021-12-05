@@ -1,10 +1,7 @@
-// 로그인 인증
-
 var express = require('express');
 const app = require('../../app');
 const knex = require('../../model/userModel');
 var router = express.Router();
-
 
 router.post('/user/signUpProc', function (req, res, next) {
     let body = req.body;
@@ -16,7 +13,7 @@ router.post('/user/signUpProc', function (req, res, next) {
         user_gender: body.gender,
         user_birth: body.birth,
     };
-    
+
     let result = knex('USER_INFO').insert(insert).then(r=>{
         res.send(r);
     });
