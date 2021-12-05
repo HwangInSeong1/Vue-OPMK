@@ -2,22 +2,16 @@
 
 var express = require('express');
 const app = require('../../app');
-const Task = require('../../model/userModel');
+const knex = require('../../model/userModel');
 var router = express.Router();
 
 
 router.post('/user/signUpProc', function (req, res, next) {
-
-    Task.getUserInfo(function(err, task) {
-        if (err) res.send(err);
-        console.log('테스크! : ', task[1]);
-
-        console.log('분해! : ', task[1].user_email);
-    });
-
     let body = req.body;
-    console.log(body);
-    res.send(body);
+
+    let result = knex('USER_INFO').then(r=>{
+        res.send(r);
+    });
 });
 
 module.exports = router;
