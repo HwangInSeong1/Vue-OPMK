@@ -8,8 +8,16 @@ var router = express.Router();
 
 router.post('/user/signUpProc', function (req, res, next) {
     let body = req.body;
-
-    let result = knex('USER_INFO').then(r=>{
+    let insert = {
+        user_email: body.userid,
+        user_pw: body.password,
+        user_name: body.name,
+        phone_no: body.phone,
+        user_gender: body.gender,
+        user_birth: body.birth,
+    };
+    
+    let result = knex('USER_INFO').insert(insert).then(r=>{
         res.send(r);
     });
 });

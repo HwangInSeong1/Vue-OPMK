@@ -147,7 +147,9 @@ export default {
             this.validation();
 
             Axios.post('/user/signUpProc' , this.registerUserInfo).then(res => {
-                console.log(res);
+                console.log(res.data);
+                alert('가입이 완료되었습니다.');
+                this.modalcheck = false;
             });
         },
         // 유효성 검사
