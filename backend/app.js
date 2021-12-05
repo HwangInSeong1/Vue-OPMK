@@ -2,11 +2,13 @@ var express = require('express');
 var path = require('path');
 var cookieParser = require('cookie-parser');
 var logger = require('morgan');
+var sql = require('./model/db');
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users');
 var testRouter = require('./routes/test');
 var loginRouter = require('./routes/user/loginProc');
+var signUpRouter = require('./routes/user/signUpProc');
 
 var app = express();
 
@@ -20,5 +22,7 @@ app.use('/', indexRouter);
 app.use('/users', usersRouter);
 app.use('/api/test', testRouter);
 app.post('/user/loginProc', loginRouter);
+app.post('/user/signUpProc', signUpRouter);
+
 
 module.exports = app;

@@ -33,20 +33,38 @@
                 <h2>SignUp</h2> <!-- 회원가입 -->
 
                 <div class="input_Sign">
-                    <span class="span01">ID</span> <span class="span02"> <input type="text" v-model="user.userid" class="ipsi" placeholder="ID INPUT " size=28 required></span><br>
-                    <span class="span01">PW</span> <span class="span02"> <input type="password" v-model="user.password" class="ipsi" placeholder="PASSWORD INPUT" size=28 required></span><br>
-                    <span class="span01">NAME</span> <span class="span02"> <input type="text" v-model="user.name" class="ipsi" placeholder="이름" size=28 required></span><br>
-                    <span class="span01">PHONE</span> <span class="span02"> <input type="text" v-model="user.phone" class="ipsi" placeholder="- 빼고 입력하세요." size=28 required></span><br>
-                    <span class="span01" style="padding:2px;">GENDER</span> <span class="span02"> &nbsp;<input type="radio"  v-model="user.gender" name="gender" value="m">남자 &nbsp;<input type="radio" v-model="user.gender" name="gender" value="f">여자 </span><br>
-                    <span class="span01">BIRTH</span> <span class="span02"> <input type="text" v-model="user.birth" class="ipsi" placeholder="EX) 19960727" size=28 required></span><br>
+                    <span class="span01">ID</span> <span class="span02"> 
+                        <input type="text" v-model="registerUserInfo.userid" class="ipsi" placeholder="이메일" size=28 required>
+                    </span><br>
+                    <span class="span01">PW</span> <span class="span02"> 
+                        <input type="password" v-model="registerUserInfo.password" class="ipsi" placeholder="비밀번호" size=28 required>
+                    </span><br>
+                    <span class="span01">NAME</span> <span class="span02"> 
+                        <input type="text" v-model="registerUserInfo.name" class="ipsi" placeholder="이름" size=28 required>
+                    </span><br>
+                    <span class="span01">PHONE</span> <span class="span02"> 
+                        <input type="text" v-model="registerUserInfo.phone" class="ipsi" placeholder="- 빼고 입력하세요." size=28 required>
+                    </span><br>
+                    <span class="span01" style="padding:2px;">GENDER</span> 
+                    <span class="span02"> &nbsp;
+                        <input type="radio"  v-model="registerUserInfo.gender" name="gender" value="m"> 남자 &nbsp;
+                        <input type="radio" v-model="registerUserInfo.gender" name="gender" value="f"> 여자
+                    </span><br>
+                    <span class="span01">BIRTH</span> <span class="span02"> 
+                        <input type="text" v-model="registerUserInfo.birth" class="ipsi" placeholder="EX) 19960727" size=28 required>
+                    </span><br>
                     <span>
-                        <div style="margin-top:5px;">제 1약관 <a href="#">[자세히보기]</a> <span class="emptyspace"></span>
-                            <input type="checkbox" name="check" value="ck" required> 동의합니다.</div>
-                        <div>제 2약관 <a href="#">[자세히보기]</a> <span class="emptyspace"></span>
-                            <input type="checkbox" name="check1" value="ck2" required> 동의합니다.</div>
+                        <div style="margin-top:5px;">제 1약관 <a href="#">[자세히보기]</a> 
+                            <span class="emptyspace"></span>
+                            <input type="checkbox" name="check" value="ck" v-model="agree1" required> 동의합니다.
+                        </div>
+                        <div>제 2약관 <a href="#">[자세히보기]</a> 
+                            <span class="emptyspace"></span>
+                            <input type="checkbox" name="check1" value="ck2" v-model="agree2" required> 동의합니다.
+                        </div>
                     </span>
                     </div>
-                        <input type="submit" value="회원가입" class="submit_Design"><br>
+                        <input type="button" value="회원가입" class="submit_Design" @click="signUpProc"><br>
                         <input type="button" @click="signmodal = false, loginmodal = true" class="back_Login" value="돌아가기">
                     </form>
                     <div class="othersign">
@@ -110,26 +128,11 @@ export default {
             signmodal : false, // 모달안에있는 회원가입창 체크값
             loginmodal : true,   // 모달안에있는 로그인창 체크값
             test: [], // 테스트
+            agree1: false,
+            agree2: false,
         }
     },
     methods: {
-        // signUp: function (event) {
-        //    this.$http.post("/api/users/signUp", {
-        //        user: this.user,
-        //    }) 
-        //    .then((res) => {
-        //        if(res.data.success == true) {
-        //            alert(res.data.message);
-        //            this.$router.push("/login");
-        //        }
-        //        if(res.data.success == false) {
-        //            alert(res.data.message);
-        //        }
-        //    })
-        //    .catch(function (error){
-        //        alert("error");
-        //    });
-        // }
         loginProc: function () {
             let userLoingInfo = {
                 'userEmail': this.userEmail,
@@ -139,7 +142,26 @@ export default {
             Axios.post('/user/loginProc' , userLoingInfo).then(res => {
                 console.log(res);
             });
+        },
+        signUpProc: function() {
+            this.validation();
+
+            Axios.post('/user/signUpProc' , this.registerUserInfo).then(res => {
+                console.log(res);
+            });
+        },
+        // 유효성 검사
+        validation: function () {
+            if(!this.agree1) {
+                alert('약관1을 동의해주세요.');
+                return false;
+            }
+            if(!this.agree2) {
+                alert('약관2을 동의해주세요.');
+                return false;
+            }
         }
+
     },
     watch: {
         userEmail: function () {
