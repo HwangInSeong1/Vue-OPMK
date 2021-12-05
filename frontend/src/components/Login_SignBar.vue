@@ -1,6 +1,5 @@
-<template>
+<template id="loginBarTemplate">
     <div class="bodydiv">
-        
         <div class="loginBar">
             <router-link to="/"><div class="logo"><img src="../assets/OpenMarket.png" class="logoimg"></div></router-link>
             <span><router-link to="/Onetoone" class="link_center">고객센터</router-link></span>
@@ -14,12 +13,12 @@
                     <form action="#" method="post" class="loginForm">
                         <h2>Login</h2> <!-- 로그인 -->
                         <div class="idForm">
-                            <input type="text" class="id" placeholder="ID">
+                            <input type="text" class="id" placeholder="ID" v-model="userEmail">
                         </div>
                         <div class="passForm">
-                            <input type="password" class="pw" placeholder="PW">
+                            <input type="password" class="pw" placeholder="PW" v-model="userPw">
                         </div>
-                        <button type="button" class="loginbtn">LOG IN</button>
+                        <button type="button" class="loginbtn" @click="loginProc">LOG IN</button>
                         <div class="bottomText"> Don't you have ID? <a href="#" @click="signmodal=true, loginmodal=false">sign up</a>
                         </div>
                         <div class="loginlogo"></div>
@@ -81,21 +80,25 @@
 
 <script>
 import Search from './Search.vue'; // 검색vue import
+import Axios from 'axios';
 
 export default {
     name : 'LoginSignBar',
-    components: {Search, // 검색vue import
+    template: 'loginBarTemplate',
+    components: {
+        Search, // 검색vue import
     },
     created: function (){
-            console.log('테스트', this.test);
-        this.$http.get('/api/test').then(res=>{
-            this.test = res.data;
-            console.log('테스트', this.test);
-        });
+        console.log('테스트', this.test);
     },
     data() {
         return {
-          user: {
+            // 로그인 관련
+            userEmail: '',
+            userPw: '',
+
+            // 회원가입 관련
+            registerUserInfo: {
                 userid: "",
                 password:"",
                 name: "",
@@ -109,25 +112,40 @@ export default {
             test: [], // 테스트
         }
     },
-    // method: {
-    //     signUp: function (event) {
-    //        this.$http.post("/api/users/signUp", {
-    //            user: this.user,
-    //        }) 
-    //        .then((res) => {
-    //            if(res.data.success == true) {
-    //                alert(res.data.message);
-    //                this.$router.push("/login");
-    //            }
-    //            if(res.data.success == false) {
-    //                alert(res.data.message);
-    //            }
-    //        })
-    //        .catch(function (error){
-    //            alert("error");
-    //        });
-    //     }
-    // },
+    methods: {
+        // signUp: function (event) {
+        //    this.$http.post("/api/users/signUp", {
+        //        user: this.user,
+        //    }) 
+        //    .then((res) => {
+        //        if(res.data.success == true) {
+        //            alert(res.data.message);
+        //            this.$router.push("/login");
+        //        }
+        //        if(res.data.success == false) {
+        //            alert(res.data.message);
+        //        }
+        //    })
+        //    .catch(function (error){
+        //        alert("error");
+        //    });
+        // }
+        loginProc: function () {
+            let userLoingInfo = {
+                'userEmail': this.userEmail,
+                'userPw': this.userPw,
+            }
+
+            Axios.post('/user/loginProc' , userLoingInfo).then(res => {
+                console.log(res);
+            });
+        }
+    },
+    watch: {
+        userEmail: function () {
+            console.log('이메일',this.userEmail);
+        }
+    }
 };
 </script>
 

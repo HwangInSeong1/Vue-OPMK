@@ -4,7 +4,6 @@
 		:options="swiperOptions" 
 		@slideChange="slideChangeTransitionStart"
 	>
-
 		<swiper-slide class="swslide" :key="ad.num" v-for="ad in ads"> <img :src="ad.adsimg"> </swiper-slide>
 		
 		<!-- pagination -->
@@ -92,7 +91,7 @@ export default {
 		},
 		methods: {
 			slideChangeTransitionStart() {
-				console.log(this.swiper.activeIndex); //현재 index값 얻기
+				// console.log(this.swiper.activeIndex); //현재 index값 얻기
 			}
 		},
 		data() {
