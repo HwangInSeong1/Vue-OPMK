@@ -161,19 +161,19 @@ export default {
             }
         },
         
-        duplicateCheck: function() {
-             let emailData = {
-                'userEmail': this.userid,
-            }
-            Axios.post('/user/duplicateCheck' , emailData).then(res => {
-                    if(emailData){
-                        alert('이미 사용중인 ID(이메일)입니다.');
-                        return false;
-                    }
-                    else
-                        return true;
-                });
-        },
+        // duplicateCheck: function() {
+        //      let emailData = {
+        //         'userEmail': this.userid,
+        //     }
+        //     Axios.post('/user/duplicateCheck' , emailData).then(res => {
+        //             if(emailData){
+        //                 alert('이미 사용중인 ID(이메일)입니다.');
+        //                 return false;
+        //             }
+        //             else
+        //                 return true;
+        //         });
+        // },
 
         // 유효성 검사
         validation: function () {
