@@ -31,10 +31,13 @@
                 <div class="modalin_sign" v-if="signmodal">
                 <form action="#" method="post" class="signForm">
                 <h2>SignUp</h2> <!-- 회원가입 -->
-
+                         
+                        <div style="margin-bottom:-35px;margin-top:15px;color:red;"> {{ error }} </div>
+                    
                 <div class="input_Sign">
                     <span class="span01">ID</span> <span class="span02"> 
-                        <input type="text" v-model="registerUserInfo.userid" class="ipsi" placeholder="이메일" size=28 required>
+                        <input type="text" v-model="registerUserInfo.userid" class="ipsi" placeholder="이메일" size=22 required>
+                        <button class="duplicateCheck" @click="duplicateCheck">OK</button>
                     </span><br>
                     <span class="span01">PW</span> <span class="span02"> 
                         <input type="password" v-model="registerUserInfo.password" class="ipsi" placeholder="비밀번호" size=28 required>
@@ -65,7 +68,7 @@
                     </span>
                     </div>
                         <input type="button" value="회원가입" class="submit_Design" @click="signUpProc"><br>
-                        <input type="button" @click="signmodal = false, loginmodal = true" class="back_Login" value="돌아가기">
+                        <input type="button" @click="signmodal = false, loginmodal = true, initForm()" class="back_Login" value="돌아가기">
                     </form>
                     <div class="othersign">
                     <ul>
@@ -88,7 +91,7 @@
                         <div class="signlogo"></div>
                     </div>
                 </div>
-                <div class="xbox_sign" @click="modalcheck = false, signmodal = false, loginmodal = true"> <!-- 모달창 닫기 -->
+                <div class="xbox_sign" @click="modalcheck = false, signmodal = false, loginmodal = true, initForm()"> <!-- 모달창 닫기 -->
                     x
                 </div>
             </div>
@@ -128,6 +131,7 @@ export default {
             signmodal : false, // 모달안에있는 회원가입창 체크값
             loginmodal : true,   // 모달안에있는 로그인창 체크값
             test: [], // 테스트
+            error: "",
             agree1: false,
             agree2: false,
         }
@@ -144,25 +148,81 @@ export default {
             });
         },
         signUpProc: function() {
-            this.validation();
-
-            Axios.post('/user/signUpProc' , this.registerUserInfo).then(res => {
-                console.log(res.data);
-                alert('가입이 완료되었습니다.');
-                this.modalcheck = false;
-            });
+            if(!this.validation())
+                return false;
+            else{
+                Axios.post('/user/signUpProc' , this.registerUserInfo).then(res => {
+                    console.log(res.data);
+                    alert('회원가입이 완료되었습니다.');
+                    this.modalcheck = false;
+                    // 가입후 폼 초기화
+                    this.initForm();
+                });
+            }
         },
+        
+        duplicateCheck: function() {
+             let emailData = {
+                'userEmail': this.userid,
+            }
+            Axios.post('/user/duplicateCheck' , emailData).then(res => {
+                    if(emailData){
+                        alert('이미 사용중인 ID(이메일)입니다.');
+                        return false;
+                    }
+                    else
+                        return true;
+                });
+        },
+
         // 유효성 검사
         validation: function () {
+            if(!this.registerUserInfo.userid) {
+                this.error = "※ ID(이메일)은 필수입력칸입니다.";
+                return false;
+            }
+            if(!this.registerUserInfo.password) {
+                this.error = "※ 비밀번호를 입력해주세요.";
+                return false;
+            }
+            if(!this.registerUserInfo.name) {
+                this.error = "※ 이름을 입력해주세요.";
+                return false;
+            }
+            if(!this.registerUserInfo.phone) {
+                this.error = "※ 휴대전화번호를 입력해주세요.";
+                return false;
+            }
+            if(!this.registerUserInfo.gender) {
+                this.error = "※ 성별을 선택해주세요.";
+                return false;
+            }
+            if(!this.registerUserInfo.birth) {
+                this.error = "※ 생년월일을 입력해주세요.";
+                return false;
+            }
             if(!this.agree1) {
-                alert('약관1을 동의해주세요.');
+                this.error = "※ 약관1을 동의해주세요.";
                 return false;
             }
             if(!this.agree2) {
-                alert('약관2을 동의해주세요.');
+                this.error = "※ 약관2를 동의해주세요.";
                 return false;
             }
-        }
+        },
+
+        // 가입 후 폼 초기화
+        initForm() {
+            this.registerUserInfo.userid = "";
+            this.registerUserInfo.password = "";
+            this.registerUserInfo.name = "";
+            this.registerUserInfo.phone = "";
+            this.registerUserInfo.gender = "";
+            this.registerUserInfo.birth = "";
+            this.agree1 = false;
+            this.agree2 = false;
+            this.error =  "";
+        },
 
     },
     watch: {

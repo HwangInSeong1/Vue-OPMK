@@ -403,6 +403,20 @@ input[type='radio']:before {
     background-size: cover;
     background-repeat: no-repeat;
 }
+
+.duplicateCheck {
+    margin-left:5px;
+    width:30px;
+    height:32px;
+    font-size:12px;
+    font-weight: bold;
+    border:1px solid gray;
+}
+
+.duplicateCheck:hover {
+    background: linear-gradient(125deg,#caff57,#c0ff38, #00e288, #caff57);
+    background-position: left;
+}
 @media(max-width:755px){
     .logo {
         width: 200px;
