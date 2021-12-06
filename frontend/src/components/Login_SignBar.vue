@@ -37,7 +37,7 @@
                 <div class="input_Sign">
                     <span class="span01">ID</span> <span class="span02"> 
                         <input type="text" v-model="registerUserInfo.userid" class="ipsi" placeholder="이메일" size=22 required>
-                        <button class="duplicateCheck" @click="duplicateCheck">OK</button>
+                        <button class="duplicateCheck">OK</button> <!-- @click="duplicateCheck" 추가하면 됨-->
                     </span><br>
                     <span class="span01">PW</span> <span class="span02"> 
                         <input type="password" v-model="registerUserInfo.password" class="ipsi" placeholder="비밀번호" size=28 required>
@@ -150,7 +150,7 @@ export default {
         signUpProc: function() {
             if(!this.validation())
                 return false;
-            else{
+            
                 Axios.post('/user/signUpProc' , this.registerUserInfo).then(res => {
                     console.log(res.data);
                     alert('회원가입이 완료되었습니다.');
@@ -158,7 +158,6 @@ export default {
                     // 가입후 폼 초기화
                     this.initForm();
                 });
-            }
         },
         
         // duplicateCheck: function() {
@@ -209,6 +208,7 @@ export default {
                 this.error = "※ 약관2를 동의해주세요.";
                 return false;
             }
+            return true;
         },
 
         // 가입 후 폼 초기화
