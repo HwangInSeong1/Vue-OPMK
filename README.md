@@ -130,13 +130,8 @@ module.exports = {
 
 ### 앞으로 추가 및 보완해야할 사항
 
-회원가입 DB구조
-
-![회원DB 데이터구조](https://user-images.githubusercontent.com/66094508/139787326-04ccf3db-6d6e-47ef-b543-95b296c9e125.PNG)
-![회원DB 데이터구조2](https://user-images.githubusercontent.com/66094508/139787328-f2d66d30-c157-4975-aa4c-d85b1884c1bd.PNG)
-
 ```
-회원DB 연동, 상품DB 생성 및 연동
+상품DB 생성 및 연동
 세션 유지, 보안 등
 ```
 
