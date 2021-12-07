@@ -32,7 +32,7 @@
                 <form action="#" method="post" class="signForm">
                 <h2>SignUp</h2> <!-- 회원가입 -->
                          
-                        <div style="margin-bottom:-35px;margin-top:15px;color:red;"> {{ error }} </div>
+                        <div style="border:1px;height:30px;margin-bottom:-35px;margin-top:15px;color:red;"> {{ error }} </div>
                     
                 <div class="input_Sign">
                     <span class="span01">ID</span> <span class="span02"> 
