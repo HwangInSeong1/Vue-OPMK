@@ -83,9 +83,9 @@ npm install axios --save
 ### 프로젝트 실행방법
 ```
 frontend 폴더에서
-yarn serve
+yarn build
 backend 폴더에서
-npm start
+yarn start
 
 -> localhost:8080 or localhost:3000 접속
 ```
