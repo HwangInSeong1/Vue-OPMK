@@ -50,6 +50,36 @@ npm i
 SET DEBUG=backend:*
 ```
 
+## backend 환경설정2
+```
+backend 폴더에 mysql, bcryptjs 암호화 모듈 설치
+npm install mysql --save
+->
+npm install bcryptjs --save
+->
+backend express 와 mysql 연동하기 위한 파일 생성
+
+userModel.js
+---------------------------------------------------------------------------------------------------------
+'use strict';
+
+const knex = require('knex')({
+    client: 'mysql',
+    connection: {
+      host : '3.36.93.66',
+      user : (보안),
+      password : '(보안)',
+      database : 'OPMK'
+    }
+});
+
+module.exports = knex;
+---------------------------------------------------------------------------------------------------------
+
+API 통신을 위한 Axios 패키지 설치 * front,back 폴더 두 곳에서 전부 설치해야 합니다.
+npm install axios --save
+```
+
 ### 프로젝트 실행방법
 ```
 frontend 폴더에서
