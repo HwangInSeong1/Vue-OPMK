@@ -210,6 +210,7 @@ NULL 값을 허용하지 않는 컬럼에 NULL 들어가면 안되기 때문에 
    4. https://www.hani.co.kr/arti/economy/consumer/977461.html  
       통계청 온라인 거래규모 성장
    5. https://velog.io/@zofqofhtltm8015/Axios-%EC%82%AC%EC%9A%A9%EB%B2%95-%EC%84%9C%EB%B2%84-%ED%86%B5%EC%8B%A0-%ED%95%B4%EB%B3%B4%EA%B8%B0
+      Axios 사용법
       
       
 ### 자세한 사이트 동작구조를 보시려면 http://3.36.93.66:8080/ 또는 http://3.36.93.66:3000/ 접속하셔서 보시면 됩니다.
