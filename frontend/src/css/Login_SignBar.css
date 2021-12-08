@@ -404,7 +404,7 @@ input[type='radio']:before {
     background-repeat: no-repeat;
 }
 
-.duplicateCheck {
+/* .duplicateCheck {
     margin-left:5px;
     width:30px;
     height:32px;
@@ -416,7 +416,7 @@ input[type='radio']:before {
 .duplicateCheck:hover {
     background: linear-gradient(125deg,#caff57,#c0ff38, #00e288, #caff57);
     background-position: left;
-}
+} */
 @media(max-width:755px){
     .logo {
         width: 200px;

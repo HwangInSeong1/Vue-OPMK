@@ -36,8 +36,8 @@
                     
                 <div class="input_Sign">
                     <span class="span01">ID</span> <span class="span02"> 
-                        <input type="text" v-model="registerUserInfo.userid" class="ipsi" placeholder="이메일" size=22 required>
-                        <button class="duplicateCheck">OK</button> <!-- @click="duplicateCheck" 추가하면 됨-->
+                        <input type="text" v-model="registerUserInfo.userid" class="ipsi" placeholder="이메일" size=28 required>
+                        <!-- <button class="duplicateCheck" @click="duplicateCheck">OK</button> -->
                     </span><br>
                     <span class="span01">PW</span> <span class="span02"> 
                         <input type="password" v-model="registerUserInfo.password" class="ipsi" placeholder="비밀번호" size=28 required>
