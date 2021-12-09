@@ -145,6 +145,9 @@ export default {
 
             Axios.post('/user/loginProc' , userLoingInfo).then(res => {
                 console.log(res);
+                alert('환영합니다.');
+                this.modalcheck = false;
+                this.initForm_login();
             });
         },
         signUpProc: function() {
@@ -222,6 +225,10 @@ export default {
             this.agree1 = false;
             this.agree2 = false;
             this.error =  "";
+        },
+        initForm_login() {
+            this.userEmail = "";
+            this.userPw = "";
         },
 
     },
