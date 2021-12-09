@@ -151,13 +151,13 @@ export default {
             if(!this.validation())
                 return false;
             
-                Axios.post('/user/signUpProc' , this.registerUserInfo).then(res => {
-                    console.log(res.data);
-                    alert('회원가입이 완료되었습니다.');
-                    this.modalcheck = false;
-                    // 가입후 폼 초기화
-                    this.initForm();
-                });
+            Axios.post('/user/signUpProc' , this.registerUserInfo).then(res => {
+                console.log(res.data);
+                alert('회원가입이 완료되었습니다.');
+                this.modalcheck = false;
+                // 가입후 폼 초기화
+                this.initForm();
+            });
         },
         
         // duplicateCheck: function() {
